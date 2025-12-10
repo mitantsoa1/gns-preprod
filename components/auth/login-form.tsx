@@ -95,7 +95,7 @@ export default function LoginForm() {
                 setLoading
               });
               router.push("/dashboard");
-              console.log('idididirrrrrr', callbackUrl, process.env.BETTER_AUTH_URL)
+              console.log('idididirrrrrr', callbackUrl, process.env.BETTER_AUTH_URL, process.env.DATABASE_URL)
             }}
           >
             {loading ? (
