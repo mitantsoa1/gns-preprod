@@ -67,6 +67,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     }
 
     const handleSignIn = async ({ email, password, callbackURL, loading, setLoading }: { email: string, password: string, callbackURL: string, loading: boolean, setLoading: (loading: boolean) => void }) => {
+        console.log('***********************', router)
         await signIn.email({
             email,
             password,
