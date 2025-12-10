@@ -94,7 +94,7 @@ export default function LoginForm() {
                 loading,
                 setLoading
               });
-              router.push(callbackUrl);
+              router.push("/dashboard");
               console.log('idididi', callbackUrl)
             }}
           >
