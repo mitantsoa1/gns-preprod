@@ -81,11 +81,13 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
                     toast.error(ctx.error.message);
                 },
                 onSuccess: async () => {
-                    if (callbackURL === "/" || callbackURL === "/fr" || callbackURL === "/en" || callbackURL === "/fr/" || callbackURL === "/en/" || callbackURL === "") {
-                        router.push(`${locale}/dashboard`);
-                    } else {
-                        router.push(callbackURL);
-                    }
+                    // if (callbackURL === "/" || callbackURL === "/fr" || callbackURL === "/en" || callbackURL === "/fr/" || callbackURL === "/en/" || callbackURL === "") {
+                    //     router.push(`${locale}/dashboard`);
+                    // } else {
+                    //     router.push(callbackURL);
+                    // }
+                    router.push(callbackURL);
+
                 },
             },
         });
