@@ -87,7 +87,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
                     // } else {
                     //     router.push(callbackURL);
                     // }
-                    window.location.href = callbackURL;
+                    window.location.href = "/fr/dashboard";
                     // router.refresh()
                     // router.push(callbackURL);
                     // router.push("/dashboard");
