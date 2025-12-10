@@ -66,7 +66,19 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         });
     }
 
-    const handleSignIn = async ({ email, password, callbackURL, loading, setLoading }: { email: string, password: string, callbackURL: string, loading: boolean, setLoading: (loading: boolean) => void }) => {
+    const handleSignIn = async ({
+        email,
+        password,
+        callbackURL,
+        loading,
+        setLoading
+    }: {
+        email: string,
+        password: string,
+        callbackURL: string,
+        loading: boolean,
+        setLoading: (loading: boolean) => void
+    }) => {
         await signIn.email({
             email,
             password,
@@ -79,27 +91,39 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
                 },
                 onError: (ctx) => {
                     toast.error(ctx.error.message);
-                    console.log("++++++++++++++++++", ctx)
+                    console.log("Erreur de connexion:", ctx);
                 },
                 onSuccess: async () => {
-                    // if (callbackURL === "/" || callbackURL === "/fr" || callbackURL === "/en" || callbackURL === "/fr/" || callbackURL === "/en/" || callbackURL === "") {
-                    //     router.push(`${locale}/dashboard`);
-                    // } else {
-                    //     router.push(callbackURL);
-                    // }
-                    // window.location.href = "/fr/dashboard";
-                    console.log('Test')
-                    router.refresh()
-                    console.log('Test 2')
-                    router.push(callbackURL);
-                    console.log('Test 3')
-                    router.push("/dashboard");
-                    console.log("///////////", callbackURL, router)
+                    try {
+                        // 1. Rafraîchir d'abord les données de session
+                        await router.refresh();
 
+                        // 2. Déterminer l'URL de redirection
+                        let redirectUrl = callbackURL;
+
+                        // Si callbackURL est vide ou la page d'accueil, rediriger vers le dashboard
+                        if (!redirectUrl ||
+                            redirectUrl === "/" ||
+                            redirectUrl === "/fr" ||
+                            redirectUrl === "/en" ||
+                            redirectUrl === "/fr/" ||
+                            redirectUrl === "/en/") {
+                            redirectUrl = `${locale}/dashboard`;
+                        }
+
+                        // 3. Rediriger une seule fois
+                        console.log("Redirection vers:", redirectUrl);
+                        router.push(redirectUrl);
+
+                    } catch (error) {
+                        console.error("Erreur lors de la redirection:", error);
+                        // Fallback vers le dashboard
+                        router.push(`${locale}/dashboard`);
+                    }
                 },
             },
         });
-    }
+    };
 
     return (
         <AuthContext.Provider value={{ user, isLoading: isPending, signOut: handleSignOut, setUser, handleSignUp, handleSignIn }}>
