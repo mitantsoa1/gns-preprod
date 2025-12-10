@@ -1,3 +1,4 @@
+import { authClient } from "@/lib/auth-client";
 import { getSession } from "@/lib/get-session";
 import { Metadata } from "next";
 import { getLocale } from "next-intl/server";
@@ -23,11 +24,15 @@ export default async function ProtectedLayout({
 }) {
     // Vérifier la session utilisateur
     const session = await getSession();
+    console.log("Session utilisateur serverr:", session);
     const locale = await getLocale();
+
+    const users = await authClient.useSession();
+    console.log("Session utilisateur client:", users);
 
     // Rediriger vers la page de connexion si non authentifié
     if (!session?.user) {
-        redirect(`/${locale}/login`);
+        // redirect(`/${locale}/login`);
     }
 
     return <>{children}</>;
