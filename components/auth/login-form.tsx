@@ -9,7 +9,7 @@ import { useState } from "react";
 import { Loader2, Key } from "lucide-react";
 import { signIn } from "@/lib/auth-client";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useLocale } from "next-intl";
 import { useAuth } from "@/context/AuthContext";
@@ -23,6 +23,7 @@ export default function LoginForm() {
   const { handleSignIn } = useAuth();
   const searchParams = useSearchParams();
   const callbackUrl = searchParams.get("callbackUrl") || "/dashboard";
+  const router = useRouter();
 
   return (
     <Card className="max-w-md">
@@ -93,6 +94,7 @@ export default function LoginForm() {
                 loading,
                 setLoading
               });
+              router.push(callbackUrl);
             }}
           >
             {loading ? (
