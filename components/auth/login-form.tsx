@@ -98,7 +98,7 @@ export default function LoginForm() {
             // }}
             onClick={() => {
               console.log("Login clicked");
-              router.push(callbackUrl)
+              router.replace(callbackUrl)
             }}
           >
             {loading ? (
