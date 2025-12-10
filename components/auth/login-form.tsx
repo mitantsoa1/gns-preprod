@@ -146,14 +146,13 @@ export default function LoginForm() {
       <CardFooter>
         <div className="flex justify-center w-full border-t py-4">
           <p className="text-center text-xs text-neutral-500">
-            built with{" "}
+            Don't have an account?{" "}
             <Link
-              href="https://better-auth.com"
+              href={`/${locale}/signup`}
               className="underline"
-              target="_blank"
             >
               <span className="dark:text-white/70 cursor-pointer">
-                better-auth.
+                Sign Up
               </span>
             </Link>
           </p>

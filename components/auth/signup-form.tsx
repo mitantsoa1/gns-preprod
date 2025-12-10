@@ -19,6 +19,7 @@ import { toast } from "sonner";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useLocale } from "next-intl";
 import { useAuth } from "@/context/AuthContext";
+import Link from "next/link";
 
 export default function SignupForm() {
   const [firstName, setFirstName] = useState("");
@@ -156,6 +157,7 @@ export default function SignupForm() {
             className="w-full"
             disabled={loading}
             onClick={async () => {
+              console.log("clicked", email, password, firstName, lastName, image);
               const base64Image = image ? await convertImageToBase64(image) : "";
               await handleSignUp(
                 email,
@@ -179,7 +181,15 @@ export default function SignupForm() {
       <CardFooter>
         <div className="flex justify-center w-full border-t py-4">
           <p className="text-center text-xs text-neutral-500">
-            Secured by <span className="text-orange-400">better-auth.</span>
+            Already have an account?{" "}
+            <Link
+              href={`/${locale}/login`}
+              className="underline"
+            >
+              <span className="dark:text-white/70 cursor-pointer">
+                Sign In
+              </span>
+            </Link>
           </p>
         </div>
       </CardFooter>
