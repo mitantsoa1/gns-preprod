@@ -80,6 +80,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
                 },
                 onError: (ctx) => {
                     toast.error(ctx.error.message);
+                    console.log("++++++++++++++++++", ctx)
                 },
                 onSuccess: async () => {
                     // if (callbackURL === "/" || callbackURL === "/fr" || callbackURL === "/en" || callbackURL === "/fr/" || callbackURL === "/en/" || callbackURL === "") {
@@ -87,10 +88,11 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
                     // } else {
                     //     router.push(callbackURL);
                     // }
-                    window.location.href = "/fr/dashboard";
+                    // window.location.href = "/fr/dashboard";
                     // router.refresh()
                     // router.push(callbackURL);
                     // router.push("/dashboard");
+                    console.log("----------", callbackURL, router)
 
                 },
             },
