@@ -107,7 +107,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
                             redirectUrl === "/en" ||
                             redirectUrl === "/fr/" ||
                             redirectUrl === "/en/") {
-                            redirectUrl = `/dashboard`;
+                            redirectUrl = `/`;
                         }
 
                         // S'assurer que l'URL commence par un slash
