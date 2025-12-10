@@ -107,7 +107,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
                             redirectUrl === "/en" ||
                             redirectUrl === "/fr/" ||
                             redirectUrl === "/en/") {
-                            redirectUrl = `${locale}/dashboard`;
+                            redirectUrl = `/dashboard`;
                         }
 
                         // S'assurer que l'URL commence par un slash
@@ -118,12 +118,12 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
                         console.log("Redirection vers:", redirectUrl);
 
                         // FORCER la redirection avec window.location.href
-                        window.location.href = redirectUrl;
+                        router.replace(redirectUrl);
 
                     } catch (error) {
                         console.error("Erreur lors de la redirection:", error);
                         // Fallback
-                        window.location.href = `${locale}/dashboard`;
+                        router.replace(`/`);
                     }
                 },
             },
