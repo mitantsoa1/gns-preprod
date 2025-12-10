@@ -95,7 +95,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
                 onSuccess: async () => {
                     try {
                         // IMPORTANT: Attendre que Next.js mette à jour la session
-                        await new Promise(resolve => setTimeout(resolve, 300));
+                        await new Promise(resolve => setTimeout(resolve, 1000));
 
                         // Déterminer l'URL de redirection
                         let redirectUrl = callbackURL;

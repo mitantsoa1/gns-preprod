@@ -22,8 +22,8 @@ export default function LoginForm() {
   const locale = useLocale()
   const { handleSignIn } = useAuth();
   const searchParams = useSearchParams();
-  // const callbackUrl = searchParams.get("callbackUrl") || "/dashboard";
-  const callbackUrl = `/dashboard`;
+  const callbackUrl = searchParams.get("callbackUrl") || `/${locale}/dashboard`;
+  // const callbackUrl = `/dashboard`;
   const router = useRouter();
 
   return (
