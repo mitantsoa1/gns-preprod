@@ -22,7 +22,8 @@ export default function LoginForm() {
   const locale = useLocale()
   const { handleSignIn } = useAuth();
   const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get("callbackUrl") || "/dashboard";
+  // const callbackUrl = searchParams.get("callbackUrl") || "/dashboard";
+  const callbackUrl = "/fr/dashboard";
   const router = useRouter();
 
   return (
@@ -94,8 +95,6 @@ export default function LoginForm() {
                 loading,
                 setLoading
               });
-              console.log('idididirrrrrr', callbackUrl, process.env.BETTER_AUTH_URL, process.env.DATABASE_URL)
-              redirect(callbackUrl);
             }}
           >
             {loading ? (
