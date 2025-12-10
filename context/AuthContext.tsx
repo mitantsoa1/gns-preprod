@@ -81,7 +81,11 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
                     toast.error(ctx.error.message);
                 },
                 onSuccess: async () => {
-                    router.push(callbackURL);
+                    if (callbackURL === "/" || callbackURL === "/fr" || callbackURL === "/en" || callbackURL === "/fr/" || callbackURL === "/en/" || callbackURL === "") {
+                        router.push(`${locale}/dashboard`);
+                    } else {
+                        router.push(callbackURL);
+                    }
                 },
             },
         });

@@ -86,7 +86,6 @@ export default function LoginForm() {
             className="w-full"
             disabled={loading}
             onClick={async () => {
-              console.log("121212", callbackUrl)
               await handleSignIn({
                 email,
                 password,
