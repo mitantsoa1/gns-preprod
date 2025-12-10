@@ -23,7 +23,7 @@ export default function LoginForm() {
   const { handleSignIn } = useAuth();
   const searchParams = useSearchParams();
   // const callbackUrl = searchParams.get("callbackUrl") || "/dashboard";
-  const callbackUrl = "/fr/dashboard";
+  const callbackUrl = "/fr";
   const router = useRouter();
 
   return (
