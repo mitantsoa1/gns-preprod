@@ -27,11 +27,11 @@ export default async function ProtectedLayout({
     console.log("Session utilisateur serverr:", session);
     const locale = await getLocale();
 
-    const users = await authClient.useSession();
-    console.log("Session utilisateur client:", users);
+    // const users = await authClient.useSession();
+    // console.log("Session utilisateur client:", users);
 
     // Rediriger vers la page de connexion si non authentifié
-    if (!session?.user) {
+    if (session) {
         // redirect(`/${locale}/login`);
     }
 
