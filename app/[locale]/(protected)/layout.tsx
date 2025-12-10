@@ -24,15 +24,15 @@ export default async function ProtectedLayout({
 }) {
     // Vérifier la session utilisateur
     const session = await getSession();
-    console.log("Session utilisateur serverr:", session);
+    // console.log("Session utilisateur serverr:", session);
     const locale = await getLocale();
 
     // const users = await authClient.useSession();
     // console.log("Session utilisateur client:", users);
 
     // Rediriger vers la page de connexion si non authentifié
-    if (session) {
-        // redirect(`/${locale}/login`);
+    if (!session) {
+        redirect(`/${locale}/login`);
     }
 
     return <>{children}</>;

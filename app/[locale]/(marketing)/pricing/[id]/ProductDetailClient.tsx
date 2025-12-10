@@ -44,7 +44,7 @@ const ProductDetailClient = () => {
         return <div>{t('planNotFound')}</div>;
     }
 
-    console.log('sess', session)
+    // console.log('sess', session)
 
     const handleCheckout = async () => {
         if (!session) {
