@@ -115,7 +115,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
                             redirectUrl = `/${redirectUrl}`;
                         }
 
-                        console.log("Redirection vers:", redirectUrl);
+                        // console.log("Redirection vers:", redirectUrl);
 
                         // FORCER la redirection avec window.location.href
                         router.replace(redirectUrl);
