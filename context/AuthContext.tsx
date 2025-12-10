@@ -65,7 +65,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
             },
         });
     }
-
     const handleSignIn = async ({
         email,
         password,
@@ -95,13 +94,13 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
                 },
                 onSuccess: async () => {
                     try {
-                        // 1. Rafraîchir d'abord les données de session
-                        await router.refresh();
+                        // IMPORTANT: Attendre que Next.js mette à jour la session
+                        await new Promise(resolve => setTimeout(resolve, 300));
 
-                        // 2. Déterminer l'URL de redirection
+                        // Déterminer l'URL de redirection
                         let redirectUrl = callbackURL;
 
-                        // Si callbackURL est vide ou la page d'accueil, rediriger vers le dashboard
+                        // Normaliser l'URL
                         if (!redirectUrl ||
                             redirectUrl === "/" ||
                             redirectUrl === "/fr" ||
@@ -111,14 +110,20 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
                             redirectUrl = `${locale}/dashboard`;
                         }
 
-                        // 3. Rediriger une seule fois
+                        // S'assurer que l'URL commence par un slash
+                        if (!redirectUrl.startsWith('/')) {
+                            redirectUrl = `/${redirectUrl}`;
+                        }
+
                         console.log("Redirection vers:", redirectUrl);
-                        router.push(redirectUrl);
+
+                        // FORCER la redirection avec window.location.href
+                        window.location.href = redirectUrl;
 
                     } catch (error) {
                         console.error("Erreur lors de la redirection:", error);
-                        // Fallback vers le dashboard
-                        router.push(`${locale}/dashboard`);
+                        // Fallback
+                        window.location.href = `${locale}/dashboard`;
                     }
                 },
             },
