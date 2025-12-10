@@ -23,7 +23,7 @@ export default function LoginForm() {
   const { handleSignIn } = useAuth();
   const searchParams = useSearchParams();
   // const callbackUrl = searchParams.get("callbackUrl") || "/dashboard";
-  const callbackUrl = "/fr";
+  const callbackUrl = `${locale}/dashboard`;
   const router = useRouter();
 
   return (
@@ -98,7 +98,7 @@ export default function LoginForm() {
             // }}
             onClick={() => {
               console.log("Login clicked");
-              router.push('/fr/')
+              router.push(callbackUrl)
             }}
           >
             {loading ? (
