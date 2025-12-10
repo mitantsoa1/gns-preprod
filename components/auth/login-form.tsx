@@ -87,14 +87,18 @@ export default function LoginForm() {
             type="submit"
             className="w-full"
             disabled={loading}
-            onClick={async () => {
-              await handleSignIn({
-                email,
-                password,
-                callbackURL: callbackUrl,
-                loading,
-                setLoading
-              });
+            // onClick={async () => {
+            //   await handleSignIn({
+            //     email,
+            //     password,
+            //     callbackURL: callbackUrl,
+            //     loading,
+            //     setLoading
+            //   });
+            // }}
+            onClick={() => {
+              console.log("Login clicked");
+              router.push('/fr/')
             }}
           >
             {loading ? (
