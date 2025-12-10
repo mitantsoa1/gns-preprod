@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3cafb1b2-3b50-4f27-a7a0-6a5948eef3ba" name="Changes" comment="feat : change directory" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="f90cac73d975636c879b1aa9628d74a94769d48c" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1760505238" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/.." />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="341kRhfOCPt934KqfbgSdQIZGdY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/harilanto/Documents/ProjetGit/gns-btp-website/gns-btp-landing&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/harilanto/Documents/ProjetGit/gns-btp-website/gns-btp-landing/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PS-243.24978.50" />
+        <option value="bundled-php-predefined-a98d8de5180a-fbeb0b58ac0f-com.jetbrains.php.sharedIndexes-PS-243.24978.50" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3cafb1b2-3b50-4f27-a7a0-6a5948eef3ba" name="Changes" comment="" />
+      <created>1760388462075</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760388462075</updated>
+      <workItem from="1760388465620" duration="4611000" />
+      <workItem from="1760481095783" duration="19481000" />
+      <workItem from="1760504882331" duration="3332000" />
+      <workItem from="1760968131163" duration="20000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix : décomposition des sections en composant">
+      <option name="closed" value="true" />
+      <created>1760389849404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1760389849404</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix : rendre le header en composant">
+      <option name="closed" value="true" />
+      <created>1760389995387</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760389995387</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat : design header">
+      <option name="closed" value="true" />
+      <created>1760392393301</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760392393301</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat : responsive header">
+      <option name="closed" value="true" />
+      <created>1760393196859</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760393196859</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat : titre design">
+      <option name="closed" value="true" />
+      <created>1760393883247</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760393883247</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat : titre responsive">
+      <option name="closed" value="true" />
+      <created>1760394284683</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760394284683</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat : 2 blocs">
+      <option name="closed" value="true" />
+      <created>1760481202727</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760481202727</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat : hero responsive">
+      <option name="closed" value="true" />
+      <created>1760482476668</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1760482476668</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat : fond de l'hero responsive">
+      <option name="closed" value="true" />
+      <created>1760484186833</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1760484186833</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat : traduction hero section">
+      <option name="closed" value="true" />
+      <created>1760484530182</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1760484530182</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat : expertise section">
+      <option name="closed" value="true" />
+      <created>1760491940333</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1760491940333</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat : expertise responsive">
+      <option name="closed" value="true" />
+      <created>1760492921613</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1760492921613</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat : testimonials design">
+      <option name="closed" value="true" />
+      <created>1760493979542</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1760493979542</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat : client-testimonials-section.tsx design">
+      <option name="closed" value="true" />
+      <created>1760495414040</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1760495414040</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat : gallery design">
+      <option name="closed" value="true" />
+      <created>1760497283369</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1760497283369</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat : newsletter design">
+      <option name="closed" value="true" />
+      <created>1760499769116</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1760499769116</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat : footer design">
+      <option name="closed" value="true" />
+      <created>1760501552067</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1760501552067</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat : traduction gallerie design">
+      <option name="closed" value="true" />
+      <created>1760501932798</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1760501932798</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat : animation d'apparitin principale">
+      <option name="closed" value="true" />
+      <created>1760503407208</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1760503407208</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat : animation other page">
+      <option name="closed" value="true" />
+      <created>1760504376432</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1760504376432</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat : animation footer">
+      <option name="closed" value="true" />
+      <created>1760506258626</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1760506258626</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat : correction build">
+      <option name="closed" value="true" />
+      <created>1760506610446</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1760506610446</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat : change directory">
+      <option name="closed" value="true" />
+      <created>1760506948531</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1760506948531</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix : décomposition des sections en composant" />
+    <MESSAGE value="fix : rendre le header en composant" />
+    <MESSAGE value="feat : design header" />
+    <MESSAGE value="feat : responsive header" />
+    <MESSAGE value="feat : titre design" />
+    <MESSAGE value="feat : titre responsive" />
+    <MESSAGE value="feat : 2 blocs" />
+    <MESSAGE value="feat : hero responsive" />
+    <MESSAGE value="feat : fond de l'hero responsive" />
+    <MESSAGE value="feat : traduction hero section" />
+    <MESSAGE value="feat : expertise section" />
+    <MESSAGE value="feat : expertise responsive" />
+    <MESSAGE value="feat : testimonials design" />
+    <MESSAGE value="feat : client-testimonials-section.tsx design" />
+    <MESSAGE value="feat : gallery design" />
+    <MESSAGE value="feat : newsletter design" />
+    <MESSAGE value="feat : footer design" />
+    <MESSAGE value="feat : traduction gallerie design" />
+    <MESSAGE value="feat : animation d'apparitin principale" />
+    <MESSAGE value="feat : animation other page" />
+    <MESSAGE value="feat : animation footer" />
+    <MESSAGE value="feat : correction build" />
+    <MESSAGE value="feat : change directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : change directory" />
+  </component>
+</project>

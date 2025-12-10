@@ -1,0 +1,799 @@
+{
+  "header": {
+    "stats": {
+      "projects": "150+ Projets réalisés",
+      "experience": "25+ ans d'expérience",
+      "mastery": "Maîtrise totale"
+    },
+    "location": "LA RÉUNION",
+    "nav": {
+      "services": "Services",
+      "projects": "Nos projets",
+      "news": "Actualités",
+      "pricing": "Tarifs & Devis",
+      "about": "À propos",
+      "contact": "Contact",
+      "login": "Connexion",
+      "register": "Inscription",
+      "dashboard": "Tableau de bord",
+      "logout": "Déconnexion"
+    },
+    "cta": "DEMANDER UN DEVIS"
+  },
+  "hero": {
+    "maitriser": "MAÎTRISER",
+    "excellence": "L'EXCELLENCE",
+    "grosOeuvre": "GROS ŒUVRE",
+    "batir": "BÂTIR",
+    "subtitle": "Des fondations solides pour vos projets les plus ambitieux",
+    "cta": "Découvrir nos projets",
+    "description": "GNS BTP est votre partenaire de confiance pour bâtir des projets solides et durables à La Réunion. Qu'il s'agisse de construire un logement, de développer un programme immobilier ou de réaliser un chantier d'envergure, nous assurons le gros œuvre de A à Z. Grâce à notre maîtrise technique et à notre connaissance des contraintes locales, nous garantissons des réalisations fiables, conformes et livrées avec excellence.",
+    "form": {
+      "location": {
+        "label": "Localisation",
+        "placeholder": "Saint-Denis",
+        "options": {
+          "saintDenis": "Saint-Denis",
+          "saintPaul": "Saint-Paul",
+          "saintPierre": "Saint-Pierre",
+          "lePort": "Le Port",
+          "saintLouis": "Saint-Louis"
+        }
+      },
+      "price": {
+        "label": "Prix",
+        "placeholder": "$100k - $500k",
+        "options": {
+          "range1": "$100k - $500k",
+          "range2": "$500k - $1M",
+          "range3": "$1M - $2M",
+          "range4": "$2M+"
+        }
+      },
+      "housing": {
+        "label": "Logement",
+        "placeholder": "Appartement",
+        "options": {
+          "appartement": "Appartement",
+          "maison": "Maison",
+          "villa": "Villa",
+          "terrain": "Terrain"
+        }
+      },
+      "submit": "PARCOURIR"
+    }
+  },
+  "values": {
+    "title": "NOS VALEURS",
+    "subtitle": "Les principes qui guident notre excellence",
+    "description": "GNS BTP place l'excellence technique au cœur de ses réalisations, avec plus de 25 ans d'expérience et 150 logements livrés. Fiables et solides, nous maîtrisons les contraintes propres à La Réunion et garantissons des chantiers conformes, durables et transparents. Partenaire de confiance des maîtres d'ouvrage publics et privés, nous construisons avec sérieux et engagement pour valoriser le patrimoine bâti de l'île.",
+    "buttons": {
+      "appointment": "PRENDRE RENDEZ-VOUS",
+      "about": "A PROPOS DE NOUS"
+    },
+    "quality": {
+      "title": "Qualité",
+      "description": "Nous nous engageons à livrer des travaux de la plus haute qualité, en respectant les normes les plus strictes de l'industrie."
+    },
+    "expertise": {
+      "title": "Expertise",
+      "description": "Notre équipe possède une expertise reconnue dans tous les aspects du gros œuvre et de la construction."
+    },
+    "commitment": {
+      "title": "Engagement",
+      "description": "Nous nous engageons à respecter les délais et les budgets, tout en maintenant notre standard d'excellence."
+    }
+  },
+  "expertise": {
+    "title": "NOS EXPERTISES",
+    "subtitle": "Des solutions complètes pour tous vos projets de construction",
+    "leftText": "EXCELLENCE TECHNIQUE",
+    "centerTitle": "PARTENAIRE DE CONFIANCE",
+    "rightText": "FIABILITÉ RECONNUE",
+    "description": "Ancrés à La Réunion, nous accompagnons maîtres d'ouvrage publics et privés avec engagement et transparence.",
+    "button": "EN SAVOIR PLUS",
+    "partenariat": "PARTENARIAT DE CONFIANCE",
+    "construction": "Construction neuve",
+    "infrastructure": "Infrastructure",
+    "residential": {
+      "title": "Résidentiel",
+      "description": "Construction et rénovation de maisons individuelles et immeubles résidentiels"
+    },
+    "commercial": {
+      "title": "Commercial",
+      "description": "Bâtiments commerciaux, bureaux et espaces professionnels"
+    },
+    "renovationService": {
+      "title": "Rénovation",
+      "description": "Rénovation complète et modernisation de bâtiments existants"
+    },
+    "maintenance": {
+      "title": "Maintenance",
+      "description": "Entretien et maintenance de vos structures existantes"
+    }
+  },
+  "testimonials": {
+    "title": "NOS EXPERTISES",
+    "learnMore": "En savoir davantage",
+    "expertise1": {
+      "title": "Fondations et structures",
+      "description": "150+ logements livrés"
+    },
+    "expertise2": {
+      "title": "Immobilier résidentiel",
+      "description": "25 ans d'expérience"
+    },
+    "expertise3": {
+      "title": "Projets d'envergure",
+      "description": "Plusieurs programmes publics et privés réalisés avec succès"
+    },
+    "expertise4": {
+      "title": "Maîtrise locale",
+      "description": "100 % adaptés aux contraintes de La Réunion : cyclones, séismes, environnement"
+    },
+    "expertise5": {
+      "title": "Qualité et conformité",
+      "description": "Délais respectés à chaque chantier"
+    },
+    "expertise6": {
+      "title": "Partenariat et fiabilité",
+      "description": "Des dizaines de maîtres d'ouvrage publics et privés"
+    }
+  },
+  "projectsHomepage": {
+    "title": "QUELQUES PHOTOS",
+    "subtitle": "DE NOS PROJETS",
+    "description": "Grâce à une coopération étroite et à un engagement sincère, GNS BTP construit avec ses clients des projets innovants et fonctionnels, conformes aux plus hauts standards. Découvrez nos réalisations pour voir comment nous pouvons, ensemble, bâtir les espaces de demain.",
+    "viewProjects": "VOIR NOS PROJETS",
+    "aboutUs": "À PROPOS DE NOUS",
+    "viewAll": "Voir tous les projets",
+    "viewDetails": "Voir les détails",
+    "project1": {
+      "title": "GreenSpace",
+      "category": "Espaces de travail"
+    },
+    "project2": {
+      "title": "Alto Résidences",
+      "category": "Logements collectifs"
+    },
+    "project3": {
+      "title": "VillaNova",
+      "category": "Villa privée"
+    },
+    "project4": {
+      "title": "Orion Tower",
+      "category": "Bureaux d'entreprise"
+    }
+  },
+  "contactHomepage": {
+    "title": "ENVIE D'ALLER PLUS LOIN?",
+    "subtitle": "Contactez-nous pour discuter de votre projet",
+    "getInTouch": "Entrons en contact",
+    "phone": "Téléphone",
+    "email": "Email",
+    "address": "Adresse",
+    "form": {
+      "title": "Envoyez-nous un message",
+      "description": "Remplissez ce formulaire et nous vous répondrons dans les plus brefs délais",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "message": "Message",
+      "namePlaceholder": "Votre nom",
+      "emailPlaceholder": "votre@email.com",
+      "phonePlaceholder": "+33 6 12 34 56 78",
+      "messagePlaceholder": "Décrivez votre projet...",
+      "submit": "Envoyer le message"
+    }
+  },
+  "clientTestimonials": {
+    "title": "QUELQUES MOTS DE NOS CLIENTS",
+    "testimonial1": {
+      "quote": "\"Grâce à GNS BTP, notre projet immobilier a été mené avec une précision et une rigueur exemplaires. Les délais ont été respectés et la qualité de la construction est au rendez-vous. Une équipe à la fois professionnelle et à l'écoute.\"",
+      "author": "Sophie Martin",
+      "role": "Responsable projets immobiliers"
+    },
+    "testimonial2": {
+      "quote": "\"Nous avons collaboré avec GNS BTP pour la réalisation d'un bâtiment administratif. Leur maîtrise technique et leur transparence nous ont permis d'avancer en toute confiance. C'est un partenaire fiable que je recommande sans hésitation.\"",
+      "author": "Jean-Luc Robert",
+      "role": "Directeur des opérations publiques"
+    }
+  },
+  "newsletter": {
+    "title": "Abonnez-vous à notre newsletter",
+    "description": "Rejoignez notre newsletter pour rester informé des nouveautés et des mises à jour.",
+    "placeholder": "Entrez votre adresse e-mail",
+    "submit": "S'abonner"
+  },
+  "footer": {
+    "description": "GNS BTP propose des solutions de construction sur mesure qui simplifient et sécurisent chaque étape de vos projets, avec un accent sur la solidité, la durabilité et la qualité architecturale.",
+    "pages": {
+      "title": "Pages",
+      "services": "Services",
+      "projects": "Nos projets",
+      "news": "Actualités",
+      "pricing": "Tarifs & Devis",
+      "about": "À propos",
+      "contact": "Contact"
+    },
+    "utilityPages": {
+      "title": "Pages utilitaires",
+      "downloadPdf": "Télécharger le document PDF",
+      "faq": "FAQ",
+      "privacy": "Politique de confidentialité"
+    },
+    "copyright": {
+      "by": "by",
+      "company": "BLUEVALORIS"
+    },
+    "tagline": "GNS BTP est votre partenaire de confiance pour tous vos projets de construction et de gros œuvre.",
+    "services": "Services",
+    "company": "Entreprise",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact",
+    "followUs": "Suivez-nous",
+    "rights": "Tous droits réservés."
+  },
+  "ProfilePage": {
+    "title": "Mon Profil",
+    "subtitle": "Consultez et mettez à jour les informations de votre profil.",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "image": "URL de la photo de profil",
+      "submit": "Enregistrer les modifications",
+      "success": "Profil mis à jour avec succès !",
+      "error": "Une erreur est survenue lors de la mise à jour de votre profil.",
+      "accountInformation": "Informations du compte utilisateur",
+      "emailVerified": "Email vérifié",
+      "createdOn": "Créé le",
+      "updatedOn": "Mis à jour le",
+      "security": "Sécurité",
+      "password": "Mot de passe",
+      "passwordDescription": "Gérez votre mot de passe pour sécuriser votre compte",
+      "changePassword": "Modifier le mot de passe",
+      "changePasswordDescription": "Entrez votre mot de passe actuel et choisissez un nouveau mot de passe sécurisé.",
+      "currentPassword": "Mot de passe actuel",
+      "newPassword": "Nouveau mot de passe",
+      "confirmNewPassword": "Confirmer le nouveau mot de passe",
+      "passwordChangeSuccess": "Mot de passe modifié avec succès !",
+      "passwordAllFieldsRequired": "Tous les champs sont obligatoires",
+      "passwordMismatch": "Les mots de passe ne correspondent pas",
+      "passwordTooShort": "Le mot de passe doit contenir au moins 8 caractères"
+    }
+  },
+  "about": {
+    "title": "À PROPOS DE NOUS",
+    "intro": "GNS BTP est une entreprise réunionnaise spécialisée dans les travaux de Gros Œuvre, née de la rencontre entre un conducteur de travaux expérimenté et des promoteurs immobiliers aguerris.",
+    "whoWeAre": {
+      "title": "Qui nous sommes?",
+      "description": "Ensemble, ils ont uni leur savoir-faire et leur vision pour bâtir une entreprise solide, ancrée localement et tournée vers l'excellence dans la construction. Chaque projet que nous menons incarne nos valeurs : fiabilité, rigueur et engagement."
+    },
+    "identity": {
+      "title": "Notre identité",
+      "description": "L'alliance entre la technique de terrain et la vision entrepreneuriale fait la force de GNS BTP. Avec plus de 25 ans d'expérience cumulée dans la promotion et la réalisation de chantiers, nous maîtrisons parfaitement les normes cycloniques, sismiques et environnementales propres à La Réunion.Nous plaçons la qualité et la durabilité au cœur de chaque ouvrage."
+    },
+    "mission": {
+      "title": "Notre mission",
+      "description": "Accompagner nos clients particuliers, promoteurs et collectivités dans la réalisation d'ouvrages durables et performants, tout en valorisant le savoir-faire local. GNS BTP s'engage à fournir des solutions fiables, transparentes et adaptées à chaque besoin, du projet résidentiel au chantier d'envergure."
+    },
+    "expertise": {
+      "title": "Notre savoir-faire",
+      "description": "Notre cœur de métier est le Gros Œuvre : fondations, structures, maçonnerie et coordination technique. Grâce à une organisation rigoureuse et une équipe expérimentée, nous garantissons des ouvrages solides, conformes et durables, même dans les conditions les plus exigeantes du territoire insulaire."
+    },
+    "vision": {
+      "title": "Notre vision",
+      "description": "Contribuer durablement au développement immobilier de La Réunion. Être reconnu comme un acteur de référence du Gros Œuvre, capable d'allier performance, innovation et responsabilité. Nous construisons aujourd'hui les structures qui abriteront la Réunion de demain."
+    },
+    "strengths": [
+      "Une parfaite maîtrise des contraintes locales (climat, sol, logistique)",
+      "150 logements livrés avec succès",
+      "25 ans d'expérience combinée en conduite de travaux et promotion immobilière",
+      "Des équipes qualifiées et engagées",
+      "Une stabilité financière et des partenariats solides"
+    ],
+    "cta": "DEMANDER UN DEVIS",
+    "faq": {
+      "question1": "Les prix affichés sur le site sont-ils définitifs ?",
+      "answer1": "Non, les prix présentés sont des estimations indicatives basées sur des projets types. Le coût final dépend de la nature du terrain, des matériaux choisis, du niveau de finition et des contraintes locales propres à chaque chantier.",
+      "question2": "Comment obtenir un devis précis pour mon projet ?"
+    }
+  },
+  "services": {
+    "title": "NOS SERVICES",
+    "description": "Nous réalisons des ouvrages durables, conformes aux normes les plus exigeantes de l'île de La Réunion. Chaque chantier est une promesse de rigueur, de qualité et de respect des engagements.",
+    "cta": "PRENDRE RENDEZ-VOUS",
+    "nav": {
+      "services": "Nos services",
+      "expertise": "Nos expertises complémentaires",
+      "difference": "Notre différence"
+    },
+    "complementaryExpertise": {
+      "title": "NOS EXPERTISES COMPLEMENTAIRES",
+      "technical": {
+        "title": "Études techniques et conception",
+        "description": "Analyse des plans, dimensionnement, et coordination technique en amont du chantier.Gestion quotidienne du planning, contrôle qualité et coordination des équipes."
+      },
+      "monitoring": "Suivi et pilotage de chantier",
+      "management": "Maîtrise d'ouvrage",
+      "delivery": "Livraison et conformité"
+    },
+    "difference": {
+      "title": "NOTRE DIFFERENCE",
+      "description": "Ce qui distingue GNS BTP, c'est l'alliance entre la précision d'un homme de terrain et la vision d'entrepreneurs expérimentés. 25 ans d'expérience cumulée, 150 logements livrés, une parfaite maîtrise du territoire réunionnais : nous construisons avec sérieux, livrons avec exigence et contribuons durablement au développement immobilier de l'île.",
+      "viewProjects": "VOIR NOS PROJETS",
+      "aboutUs": "A PROPOS DE NOUS"
+    },
+    "servicesData": {
+      "title1": "Fondation & Structures",
+      "description1": "Réalisation complète des voiles, fondations, planchers, poteaux et dalles, avec une exécution méthodique et précise selon les normes en vigueur.",
+      "title2": "Maçonnerie & Béton Armé",
+      "description2": "Une expertise reconnue dans la mise en œuvre du béton armé et la réalisation de structures complexes et durables.",
+      "title3": "Adaptation aux contraintes",
+      "description3": "Notre connaissance fine du territoire nous permet d'anticiper les défis climatiques, logistiques et réglementaires spécifiques à chaque projet.",
+      "title4": "Finitions Structurelles",
+      "description4": "En complément du Gros Œuvre, nous assurons les finitions structurelles nécessaires à la pérennité et à l'esthétique des ouvrages.",
+      "EnSavoirDAvantage": "En savoir d'avantage"
+    }
+  },
+  "projects": {
+    "title": "Réalisations",
+    "hero": {
+      "title": "Nos projets bâtissent la confiance",
+      "description": "Chaque chantier mené par GNS BTP reflète notre exigence de qualité et de durabilité. De la fondation à la livraison, nous construisons des ouvrages solides et esthétiques, adaptés aux réalités de La Réunion.",
+      "learnMore": "En savoir plus"
+    },
+    "realization": {
+      "title": "Résidence Les Flamboyants",
+      "description": "Construction d'un ensemble de 24 logements sociaux à Saint-Denis, alliant confort moderne et respect des normes cycloniques.",
+      "date": "12 février 2024"
+    },
+    "cta": {
+      "viewMore": "VOIR PLUS DE PROJET",
+      "build": "BÂTIR",
+      "tagline": "Solide dans l'exécution, Transparent dans l'engagement",
+      "appointment": "PRENDRE RENDEZ-VOUS",
+      "aboutUs": "A PROPOS DE NOUS"
+    }
+  },
+  "news": {
+    "search": "Rechercher",
+    "share": "Partager",
+    "description": "Découvrez nos actualités, conseils et retours d'expérience autour du bâtiment à La Réunion. GNS BTP partage ici son savoir-faire, ses projets et sa vision d'une construction durable et maîtrisée.",
+    "mainCard": {
+      "title": "Nos projets bâtissent la confiance",
+      "description": "Chaque chantier mené par GNS BTP reflète notre exigence de qualité et de durabilité. De la fondation à la livraison, nous construisons des ouvrages solides et esthétiques, adaptés aux réalités de La Réunion.",
+      "consult": "Consulter",
+      "timeAgo": "il y a 2j"
+    },
+    "testimonials": {
+      "hashtag": "#ExpertiseLocale",
+      "description": "Nos équipes vous accompagnent à chaque étape pour transformer vos idées en ouvrages concrets",
+      "date": "04 avril 2025"
+    },
+    "releases": {
+      "title": "Nos communiqués",
+      "learnMore": "En savoir d'avantage",
+      "hashtag": "#ExpertiseLocale",
+      "description": "Nos équipes vous accompagnent à chaque étape pour transformer vos idées en ouvrages concrets",
+      "date": "04 avril 2025",
+      "consult": "Consulter"
+    },
+    "stayConnected": {
+      "title": "Rester connecté",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "Linkedin",
+      "x": "X",
+      "youtube": "Youtube",
+      "like": "Like",
+      "follow": "Follow",
+      "subscribe": "Subscribe"
+    }
+  },
+  "pricing": {
+    "intro": "Chez GNS BTP, nous croyons qu'un projet bien estimé, c'est un chantier bien lancé. Découvrez nos offres de prestations adaptées à différents types de constructions et obtenez une estimation claire et réaliste selon vos besoins.",
+    "title": "TARIFS & DEVIS",
+    "choosePlan": "Choisissez votre plan",
+    "plans": {
+      "collective": {
+        "title": "Bâtiment collectif",
+        "price": "1 150€ / m²",
+        "delay": "Délai estimé : 10 à 14 mois",
+        "description": "Construction de bâtiments résidentiels ou mixtes (logements + commerces)"
+      },
+      "mostRequested": "Le plus demandé",
+      "individual": {
+        "title": "Maison individuelle",
+        "price": "295 000 €",
+        "delay": "Délai estimé : 5 à 8 mois",
+        "description": "Conception et réalisation complète d'une maison individuelle avec fondations, structures et gros œuvre.",
+        "mostRequested": "Le plus demandé"
+      },
+      "extension": {
+        "title": "Extension / surélévation",
+        "price": "65 000 €",
+        "delay": "Délai estimé : 3 à 5 mois",
+        "description": "Travaux d'agrandissement, ajout d'un étage ou d'une aile sur bâtiment existant."
+      },
+      "custom": {
+        "title": "Devis personnalisé",
+        "description": "Contactez-nous pour plus de détails"
+      }
+    },
+    "cta": {
+      "choose": "CHOISIR CE DEVIS",
+      "request": "FAIRE UNE DEMANDE",
+      "appointment": "PRENDRE RENDEZ-VOUS",
+      "buy": "ACHETER",
+      "getStarted": "Commencer",
+      "startFreeTrial": "Démarrer l'essai gratuit",
+      "contactSales": "Contacter les ventes",
+      "upgrade": "Mettre à niveau",
+      "downgrade": "Rétrograder",
+      "currentPlan": "Plan actuel"
+    },
+    "features": {
+      "title": "Caractéristiques spécifiques",
+      "servicesOffered": "Services offerts",
+      "option1": "Option 1",
+      "option2": "Option 2",
+      "option3": "Option 3",
+      "option4": "Option 4",
+      "unlimitedProjects": "Projets illimités",
+      "teamMembers": "Membres d'équipe",
+      "storage": "Stockage",
+      "prioritySupport": "Support prioritaire",
+      "customBranding": "Marque personnalisée",
+      "advancedAnalytics": "Analyses avancées",
+      "apiAccess": "Accès API",
+      "dedicatedAccountManager": "Gestionnaire de compte dédié"
+    },
+    "notConvinced": {
+      "title": "Toujours pas convaincu ? Essayez-nous !",
+      "description1": "Pas d'inquiétude, vous ne signez rien tout de suite.",
+      "description2": "Nous vous guidons étape par étape pour bâtir un projet qui vous ressemble."
+    },
+    "faq": {
+      "question1": "Les prix affichés sur le site sont-ils définitifs ?",
+      "answer1": "Non, les prix affichés sont des estimations indicatives basées sur des projets types. Le coût final dépend de la nature du terrain, des matériaux choisis, du niveau de finition et des contraintes locales spécifiques à chaque chantier.",
+      "question2": "Comment puis-je obtenir un devis précis pour mon projet ?",
+      "answer2": "Contactez-nous via notre formulaire de demande de devis ou par téléphone. Nous organiserons une visite sur site pour évaluer votre projet et vous fournir un devis détaillé adapté à vos besoins spécifiques.",
+      "question3": "Quels sont vos délais de réalisation types ?",
+      "answer3": "Les délais de projet varient en fonction de la complexité et de l'ampleur, mais nous fournissons des calendriers détaillés lors de la phase de consultation.",
+      "question4": "Proposez-vous un support après la construction ?",
+      "answer4": "Oui, nous offrons un service après-vente complet et une garantie pour tous nos projets de construction."
+    },
+    "checkout": {
+      "title": "Paiement",
+      "completePurchase": "Finaliser l'achat",
+      "paymentDetails": "Détails de paiement",
+      "orderSummary": "Résumé de la commande",
+      "billingAddress": "Adresse de facturation",
+      "sameAsShipping": "Identique à l'adresse de livraison",
+      "couponCode": "Code promo",
+      "applyCoupon": "Appliquer le code",
+      "invalidCoupon": "Code promo invalide",
+      "total": "Total",
+      "subtotal": "Sous-total",
+      "tax": "Taxe",
+      "shipping": "Livraison",
+      "discount": "Remise",
+      "securePayment": "Paiement sécurisé",
+      "stripeSecure": "Propulsé par Stripe",
+      "cardNumber": "Numéro de carte",
+      "expiryDate": "Date d'expiration",
+      "cvc": "CVC",
+      "nameOnCard": "Nom sur la carte",
+      "processing": "Traitement de votre paiement...",
+      "success": "Paiement réussi !",
+      "failed": "Paiement échoué",
+      "error": "Erreur de paiement",
+      "tryAgain": "Réessayer"
+    },
+    "confirmation": {
+      "title": "Confirmation de commande",
+      "thankYou": "Merci pour votre achat !",
+      "orderNumber": "Numéro de commande",
+      "emailSent": "Un email de confirmation a été envoyé à",
+      "whatsNext": "Et maintenant ?",
+      "downloadProduct": "Télécharger votre produit",
+      "accessAccount": "Accéder à votre compte",
+      "contactSupport": "Contacter le support",
+      "continueShopping": "Continuer les achats"
+    },
+    "planNotFound": "Produit Non Trouvé",
+    "loading": "Chargement...",
+    "backToPricing": "Retour aux tarifs",
+    "processing": "Traitement en cours...",
+    "securePayment": "Paiement 100% sécurisé",
+    "cancelAnytime": "Annulation possible à tout moment",
+    "checkoutTitle": "Finalisez votre achat",
+    "backToProduct": "Retour au produit",
+    "loadingCheckout": "Préparation du paiement sécurisé...",
+    "paymentInfo": "Remplissez vos informations de paiement ci-dessous",
+    "stripeSecure": "Paiement sécurisé par Stripe",
+    "productIdRequired": "ID du produit requis",
+    "serverError": "Erreur serveur lors de la création du paiement",
+    "paymentSystemError": "Erreur du système de paiement",
+    "checkoutSessionError": "Erreur lors de la création de la session de paiement",
+    "unknownError": "Une erreur inconnue est survenue",
+    "checkoutReady": "Paiement prêt - Remplissez vos informations",
+    "paymentSuccess": "Paiement réussi !",
+    "paymentFailed": "Paiement échoué",
+    "tryAgain": "Réessayer",
+    "paymentProcessing": "Paiement en cours de traitement...",
+    "redirecting": "Redirection en cours...",
+    "orderConfirmation": "Confirmation de commande",
+    "thankYouMessage": "Merci pour votre achat !",
+    "emailConfirmation": "Un email de confirmation a été envoyé à",
+    "viewOrder": "Voir la commande",
+    "paymentMethod": "Méthode de paiement",
+    "billingAddress": "Adresse de facturation",
+    "couponCode": "Code promo",
+    "applyCoupon": "Appliquer",
+    "invalidCoupon": "Code promo invalide",
+    "total": "Total",
+    "subtotal": "Sous-total",
+    "tax": "Taxe",
+    "shipping": "Livraison",
+    "discount": "Remise",
+    "free": "Gratuit",
+    "month": "mois",
+    "year": "an",
+    "lifetime": "à vie",
+    "popular": "Populaire",
+    "bestValue": "Meilleur rapport qualité-prix",
+    "savePercentage": "Économisez {percentage}%",
+    "mostPopular": "Le plus populaire",
+    "enterprise": "Entreprise",
+    "customPlan": "Plan personnalisé",
+    "contactSales": "Contacter les ventes",
+    "startFreeTrial": "Démarrer l'essai gratuit",
+    "currentPlan": "Plan actuel",
+    "changePlan": "Changer de plan",
+    "cancelSubscription": "Annuler l'abonnement",
+    "subscriptionActive": "Abonnement actif",
+    "subscriptionCancelled": "Abonnement annulé",
+    "nextBillingDate": "Prochaine date de facturation",
+    "billingHistory": "Historique de facturation",
+    "invoice": "Facture",
+    "downloadInvoice": "Télécharger la facture",
+    "refundPolicy": "Politique de remboursement",
+    "termsOfService": "Conditions d'utilisation",
+    "privacyPolicy": "Politique de confidentialité",
+    "moneyBackGuarantee": "Garantie de remboursement de 30 jours",
+    "sslEncryption": "Chiffrement SSL",
+    "paymentMethods": "Méthodes de paiement acceptées",
+    "needHelp": "Besoin d'aide ?",
+    "liveChat": "Chat en direct",
+    "emailSupport": "Support par email",
+    "phoneSupport": "Support téléphonique"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "warning": "Avertissement",
+    "info": "Information",
+    "confirm": "Confirmer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "back": "Retour",
+    "next": "Suivant",
+    "submit": "Soumettre",
+    "reset": "Réinitialiser",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "refresh": "Actualiser",
+    "close": "Fermer",
+    "open": "Ouvrir",
+    "yes": "Oui",
+    "no": "Non",
+    "ok": "OK",
+    "apply": "Appliquer",
+    "clear": "Effacer",
+    "select": "Sélectionner",
+    "deselect": "Désélectionner",
+    "all": "Tous",
+    "none": "Aucun",
+    "required": "Requis",
+    "optional": "Optionnel",
+    "enabled": "Activé",
+    "disabled": "Désactivé",
+    "active": "Actif",
+    "inactive": "Inactif"
+  },
+  "errors": {
+    "productNotFound": "Produit non trouvé",
+    "serverError": "Erreur serveur",
+    "paymentError": "Erreur de paiement",
+    "networkError": "Erreur réseau",
+    "validationError": "Erreur de validation",
+    "unauthorized": "Non autorisé",
+    "forbidden": "Interdit",
+    "notFound": "Non trouvé",
+    "timeout": "Délai d'attente dépassé",
+    "unknown": "Une erreur inconnue est survenue"
+  },
+  "validation": {
+    "required": "Ce champ est obligatoire",
+    "email": "Veuillez entrer une adresse email valide",
+    "phone": "Veuillez entrer un numéro de téléphone valide",
+    "cardNumber": "Veuillez entrer un numéro de carte valide",
+    "expiryDate": "Veuillez entrer une date d'expiration valide",
+    "cvc": "Veuillez entrer un CVC valide",
+    "zipCode": "Veuillez entrer un code postal valide"
+  },
+  "contact": {
+    "title": "Entrons en contact !",
+    "description": "Vous avez une question ou besoin d'aide ? Contactez-nous par email, téléphone ou via le formulaire ci-dessous. Nous serons ravis de vous accompagner.",
+    "tagline": "Nous serons ravis de vous accompagner.",
+    "form": {
+      "name": "Nom & prénom",
+      "email": "Email",
+      "message": "Votre message"
+    },
+    "info": {
+      "title": "Contact",
+      "phone": "+ 262 2 62 28 26 25",
+      "email": "gnsbtp@gmail.com",
+      "location": "La Réunion"
+    },
+    "social": {
+      "title": "Suivez-nous"
+    }
+  },
+  "success": {
+    "title": "Paiement réussi !",
+    "message": "Merci pour votre achat. Vous recevrez bientôt un e-mail de confirmation.",
+    "cta": "Retour à l'accueil"
+  },
+  "cancel": {
+    "title": "Paiement annulé",
+    "message": "Votre paiement a été annulé. Vous n'avez pas été débité.",
+    "cta": "Retour aux tarifs"
+  },
+  "dashboard": {
+    "title": "Tableau de Bord",
+    "subtitle": "Vue d'ensemble de vos projets et activités",
+    "stats": {
+      "activeProjects": "Projets en cours",
+      "pendingQuotes": "Devis en attente",
+      "completedSites": "Chantiers livrés",
+      "clientSatisfaction": "Note moyenne"
+    },
+    "projects": {
+      "title": "Projets Récents",
+      "viewAll": "Voir tout",
+      "columns": {
+        "name": "Projet",
+        "client": "Client",
+        "status": "Statut",
+        "progress": "Progression",
+        "budget": "Budget"
+      },
+      "status": {
+        "En cours": "En cours",
+        "Planifié": "Planifié",
+        "Terminé": "Terminé"
+      }
+    },
+    "quotes": {
+      "title": "Derniers Devis",
+      "create": "Nouveau Devis",
+      "columns": {
+        "reference": "Réf",
+        "client": "Client",
+        "amount": "Montant",
+        "status": "Statut"
+      },
+      "status": {
+        "En attente": "En attente",
+        "Accepté": "Accepté",
+        "Refusé": "Refusé"
+      }
+    },
+    "activities": {
+      "title": "Activités Récentes"
+    },
+    "actions": {
+      "newQuote": "Demander un devis",
+      "viewProjects": "Mes projets",
+      "contactSupport": "Support client",
+      "documents": "Documents"
+    }
+  },
+  "datatable": {
+    "select": "Sélectionner",
+    "name": "Nom",
+    "packageName": "Nom du Package",
+    "price": "Prix",
+    "category": "Catégorie",
+    "targetProfile": "Profil Cible",
+    "region": "Région",
+    "status": "Statut",
+    "features": "Fonctionnalités",
+    "createdAt": "Date de création",
+    "actions": "Actions",
+    "products": "Produits",
+    "payment": "Paiement",
+    "customer": "Client",
+    "package": "Package",
+    "amount": "Montant",
+    "paymentDate": "Date de paiement",
+    "profile": "Profil",
+    "lastActivity": "Dernière activité",
+    "administrator": "Administrateur",
+    "role": "Rôle",
+    "permissions": "Permissions",
+    "lastLogin": "Dernière connexion",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "paid": "Payé",
+    "popular": "Populaire",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "transactionId": "ID de transaction",
+    "slug": "Slug",
+    "productsCount": "Produits",
+    "noProduct": "Aucun produit",
+    "bankTransfer": "Virement bancaire",
+    "card": "Carte",
+    "pendingInformation": "En attente d'information",
+    "inProgress": "En cours",
+    "in_progress": "En cours",
+    "completed": "Terminé",
+    "cancelled": "Annulé",
+    "refunded": "Remboursé",
+    "succeeded": "Réussi",
+    "pending": "En attente",
+    "failed": "Échoué",
+    "processing": "En traitement",
+    "canceled": "Annulé",
+    "requires_action": "Action requise",
+    "requires_payment_method": "Méthode de paiement requise",
+    "requires_capture": "Capture requise",
+    "oneTime": "ponctuel",
+    "subscription": "Abonnement",
+    "refund": "Rembourser",
+    "resendEmail": "Renvoyer l'email",
+    "sendEmail": "Envoyer un email",
+    "trash": "Corbeille",
+    "superAdmin": "Super Admin",
+    "unknown": "inconnu",
+    "never": "Jamais",
+    "notDefined": "Non définie",
+    "noResultYet": "Aucun résultat",
+    "of": "sur",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "rowsPerPage": "Ligne par page",
+    "all": "Tous",
+    "feature": "Fonctionnalité",
+    "user": "utilisateur",
+    "users": "Utilisateurs",
+    "settings": "Paramètre",
+    "dates": "Date de paiement",
+    "monthly": "Mensuel",
+    "yearly": "Annuel",
+    "trialing": "En essai",
+    "expired": "Expiré",
+    "paused": "En pause",
+    "pastDue": "En retard",
+    "unpaid": "Impayé",
+    "startDate": "Date de début",
+    "nextBilling": "Prochaine facturation",
+    "cancelSubscription": "Annuler l'abonnement",
+    "incomplete": "Incomplet",
+    "changed": "Modifié",
+    "purchaseDate": "Date d'achat",
+    "search": "Rechercher"
+  }
+}

@@ -1,0 +1,799 @@
+{
+  "header": {
+    "stats": {
+      "projects": "150+ Projects completed",
+      "experience": "25+ years of experience",
+      "mastery": "Total mastery"
+    },
+    "location": "REUNION ISLAND",
+    "nav": {
+      "services": "Services",
+      "projects": "Our projects",
+      "news": "News",
+      "pricing": "Pricing & Quotes",
+      "about": "About",
+      "contact": "Contact",
+      "login": "Login",
+      "register": "Register",
+      "dashboard": "Dashboard",
+      "logout": "Logout"
+    },
+    "cta": "REQUEST A QUOTE"
+  },
+  "hero": {
+    "maitriser": "MASTER",
+    "excellence": "EXCELLENCE",
+    "grosOeuvre": "STRUCTURAL WORK",
+    "batir": "BUILD",
+    "subtitle": "Solid foundations for your most ambitious projects",
+    "cta": "Discover our projects",
+    "description": "GNS BTP is your trusted partner to build solid and sustainable projects in Reunion Island. Whether it's building a home, developing a real estate program or carrying out a large-scale construction site, we ensure the structural work from A to Z. Thanks to our technical expertise and our knowledge of local constraints, we guarantee reliable, compliant and delivered with excellence.",
+    "form": {
+      "location": {
+        "label": "Location",
+        "placeholder": "Saint-Denis",
+        "options": {
+          "saintDenis": "Saint-Denis",
+          "saintPaul": "Saint-Paul",
+          "saintPierre": "Saint-Pierre",
+          "lePort": "Le Port",
+          "saintLouis": "Saint-Louis"
+        }
+      },
+      "price": {
+        "label": "Price",
+        "placeholder": "$100k - $500k",
+        "options": {
+          "range1": "$100k - $500k",
+          "range2": "$500k - $1M",
+          "range3": "$1M - $2M",
+          "range4": "$2M+"
+        }
+      },
+      "housing": {
+        "label": "Housing",
+        "placeholder": "Apartment",
+        "options": {
+          "appartement": "Apartment",
+          "maison": "House",
+          "villa": "Villa",
+          "terrain": "Land"
+        }
+      },
+      "submit": "BROWSE"
+    }
+  },
+  "values": {
+    "title": "OUR VALUES",
+    "subtitle": "The principles that guide our excellence",
+    "description": "GNS BTP places technical excellence at the heart of its achievements, with more than 25 years of experience and 150 homes delivered. Reliable and solid, we master the constraints specific to Reunion Island and guarantee compliant, sustainable and transparent construction sites. A trusted partner of public and private contractors, we build with seriousness and commitment to enhance the island's built heritage.",
+    "buttons": {
+      "appointment": "MAKE AN APPOINTMENT",
+      "about": "ABOUT US"
+    },
+    "quality": {
+      "title": "Quality",
+      "description": "We are committed to delivering the highest quality work, adhering to the strictest industry standards."
+    },
+    "expertise": {
+      "title": "Expertise",
+      "description": "Our team has recognized expertise in all aspects of structural work and construction."
+    },
+    "commitment": {
+      "title": "Commitment",
+      "description": "We are committed to meeting deadlines and budgets while maintaining our standard of excellence."
+    }
+  },
+  "expertise": {
+    "title": "OUR EXPERTISE",
+    "subtitle": "Complete solutions for all your construction projects",
+    "leftText": "TECHNICAL EXCELLENCE",
+    "centerTitle": "TRUSTED PARTNER",
+    "rightText": "RECOGNIZED RELIABILITY",
+    "description": "Based in Reunion Island, we support public and private project owners with commitment and transparency.",
+    "button": "LEARN MORE",
+    "partenariat": "TRUSTED PARTNERSHIP",
+    "construction": "New construction",
+    "infrastructure": "Infrastructure",
+    "residential": {
+      "title": "Residential",
+      "description": "Construction and renovation of single-family homes and residential buildings"
+    },
+    "commercial": {
+      "title": "Commercial",
+      "description": "Commercial buildings, offices and professional spaces"
+    },
+    "renovationService": {
+      "title": "Renovation",
+      "description": "Complete renovation and modernization of existing buildings"
+    },
+    "maintenance": {
+      "title": "Maintenance",
+      "description": "Maintenance and upkeep of your existing structures"
+    }
+  },
+  "testimonials": {
+    "title": "OUR EXPERTISE",
+    "learnMore": "Learn more",
+    "expertise1": {
+      "title": "Foundations and structures",
+      "description": "150+ homes delivered"
+    },
+    "expertise2": {
+      "title": "Residential real estate",
+      "description": "25 years of experience"
+    },
+    "expertise3": {
+      "title": "Large-scale projects",
+      "description": "Several public and private programs successfully completed"
+    },
+    "expertise4": {
+      "title": "Local expertise",
+      "description": "100% adapted to Reunion Island constraints: cyclones, earthquakes, environment"
+    },
+    "expertise5": {
+      "title": "Quality and compliance",
+      "description": "Deadlines respected on every construction site"
+    },
+    "expertise6": {
+      "title": "Partnership and reliability",
+      "description": "Dozens of public and private project owners"
+    }
+  },
+  "projectsHomepage": {
+    "title": "SOME PHOTOS",
+    "subtitle": "OF OUR PROJECTS",
+    "description": "Through close cooperation and sincere commitment, GNS BTP builds innovative and functional projects with its clients, compliant with the highest standards. Discover our achievements to see how we can, together, build the spaces of tomorrow.",
+    "viewProjects": "VIEW OUR PROJECTS",
+    "aboutUs": "ABOUT US",
+    "viewAll": "View all projects",
+    "viewDetails": "View details",
+    "project1": {
+      "title": "GreenSpace",
+      "category": "Workspaces"
+    },
+    "project2": {
+      "title": "Alto Residences",
+      "category": "Collective housing"
+    },
+    "project3": {
+      "title": "VillaNova",
+      "category": "Private villa"
+    },
+    "project4": {
+      "title": "Orion Tower",
+      "category": "Corporate offices"
+    }
+  },
+  "contactHomepage": {
+    "title": "WANT TO GO FURTHER?",
+    "subtitle": "Contact us to discuss your project",
+    "getInTouch": "Get in touch",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "form": {
+      "title": "Send us a message",
+      "description": "Fill out this form and we will get back to you as soon as possible",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your@email.com",
+      "phonePlaceholder": "+33 6 12 34 56 78",
+      "messagePlaceholder": "Describe your project...",
+      "submit": "Send message"
+    }
+  },
+  "clientTestimonials": {
+    "title": "WORDS FROM OUR CLIENTS",
+    "testimonial1": {
+      "quote": "\"Thanks to GNS BTP, our real estate project was carried out with exemplary precision and rigor. The deadlines were met and the quality of the construction is outstanding. A team that is both professional and attentive.\"",
+      "author": "Sophie Martin",
+      "role": "Real Estate Project Manager"
+    },
+    "testimonial2": {
+      "quote": "\"We collaborated with GNS BTP for the construction of an administrative building. Their technical expertise and transparency allowed us to move forward with complete confidence. They are a reliable partner that I recommend without hesitation.\"",
+      "author": "Jean-Luc Robert",
+      "role": "Director of Public Operations"
+    }
+  },
+  "newsletter": {
+    "title": "Subscribe to our newsletter",
+    "description": "Join our newsletter to stay informed about news and updates.",
+    "placeholder": "Enter your email address",
+    "submit": "Subscribe"
+  },
+  "footer": {
+    "description": "GNS BTP offers tailored construction solutions that simplify and secure every stage of your projects, with a focus on solidity, durability, and architectural quality.",
+    "pages": {
+      "title": "Pages",
+      "services": "Services",
+      "projects": "Our projects",
+      "news": "News",
+      "pricing": "Pricing & Quotes",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "utilityPages": {
+      "title": "Utility pages",
+      "downloadPdf": "Download PDF document",
+      "faq": "FAQ",
+      "privacy": "Privacy policy"
+    },
+    "copyright": {
+      "by": "by",
+      "company": "BLUEVALORIS"
+    },
+    "tagline": "GNS BTP is your trusted partner for all your construction and structural work projects.",
+    "services": "Services",
+    "company": "Company",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "followUs": "Follow us",
+    "rights": "All rights reserved."
+  },
+  "ProfilePage": {
+    "title": "My Profile",
+    "subtitle": "View and update your profile information.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "image": "Profile Picture URL",
+      "submit": "Save Changes",
+      "success": "Profile updated successfully!",
+      "error": "An error occurred while updating your profile.",
+      "accountInformation": "User account information",
+      "emailVerified": "Email verified",
+      "createdOn": "Created on",
+      "updatedOn": "Updated on",
+      "security": "Security",
+      "password": "Password",
+      "passwordDescription": "Manage your password to secure your account",
+      "changePassword": "Change Password",
+      "changePasswordDescription": "Enter your current password and choose a new secure password.",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmNewPassword": "Confirm New Password",
+      "passwordChangeSuccess": "Password changed successfully!",
+      "passwordAllFieldsRequired": "All fields are required",
+      "passwordMismatch": "Passwords do not match",
+      "passwordTooShort": "Password must be at least 8 characters long"
+    }
+  },
+  "about": {
+    "title": "ABOUT US",
+    "intro": "GNS BTP is a Reunion Island company specializing in structural work, born from the meeting between an experienced site manager and seasoned real estate developers.",
+    "whoWeAre": {
+      "title": "Who we are?",
+      "description": "Together, they have united their expertise and vision to build a solid company, locally rooted and focused on excellence in construction. Each project we undertake embodies our values: reliability, rigor and commitment."
+    },
+    "identity": {
+      "title": "Our identity",
+      "description": "The alliance between field technique and entrepreneurial vision is the strength of GNS BTP. With over 25 years of combined experience in development and site execution, we perfectly master the cyclonic, seismic and environmental standards specific to Reunion Island. We place quality and durability at the heart of each project."
+    },
+    "mission": {
+      "title": "Our mission",
+      "description": "To support our individual clients, developers and communities in the realization of sustainable and efficient projects, while promoting local expertise. GNS BTP is committed to providing reliable, transparent and adapted solutions to each need, from residential projects to large-scale construction sites."
+    },
+    "expertise": {
+      "title": "Our expertise",
+      "description": "Our core business is structural work: foundations, structures, masonry and technical coordination. Thanks to rigorous organization and an experienced team, we guarantee solid, compliant and durable projects, even in the most demanding conditions of the island territory."
+    },
+    "vision": {
+      "title": "Our vision",
+      "description": "To contribute sustainably to the real estate development of Reunion Island. To be recognized as a reference player in structural work, capable of combining performance, innovation and responsibility. We are building today the structures that will house tomorrow's Reunion Island."
+    },
+    "strengths": [
+      "Perfect mastery of local constraints (climate, soil, logistics)",
+      "150 homes successfully delivered",
+      "25 years of combined experience in site management and real estate development",
+      "Qualified and committed teams",
+      "Financial stability and solid partnerships"
+    ],
+    "cta": "REQUEST A QUOTE",
+    "faq": {
+      "question1": "Are the prices displayed on the site final?",
+      "answer1": "No, the prices presented are indicative estimates based on typical projects. The final cost depends on the nature of the land, the materials chosen, the level of finish and the local constraints specific to each site.",
+      "question2": "How to get an accurate quote for my project?"
+    }
+  },
+  "services": {
+    "title": "OUR SERVICES",
+    "description": "We create sustainable projects, compliant with the most demanding standards of Reunion Island. Each site is a promise of rigor, quality and respect for commitments.",
+    "cta": "MAKE AN APPOINTMENT",
+    "nav": {
+      "services": "Our services",
+      "expertise": "Our complementary expertise",
+      "difference": "Our difference"
+    },
+    "complementaryExpertise": {
+      "title": "OUR COMPLEMENTARY EXPERTISE",
+      "technical": {
+        "title": "Technical studies and design",
+        "description": "Plan analysis, sizing, and technical coordination before the construction site. Daily management of planning, quality control and team coordination."
+      },
+      "monitoring": "Site monitoring and management",
+      "management": "Project ownership",
+      "delivery": "Delivery and compliance"
+    },
+    "difference": {
+      "title": "OUR DIFFERENCE",
+      "description": "What distinguishes GNS BTP is the alliance between the precision of a field professional and the vision of experienced entrepreneurs. 25 years of combined experience, 150 homes delivered, perfect mastery of the Reunion territory: we build with seriousness, deliver with excellence and contribute sustainably to the island's real estate development.",
+      "viewProjects": "VIEW OUR PROJECTS",
+      "aboutUs": "ABOUT US"
+    },
+    "servicesData": {
+      "title1": "Foundation & Structures",
+      "description1": "Complete execution of walls, foundations, floors, columns and slabs, with a methodical and precise approach according to current standards.",
+      "title2": "Masonry & Reinforced Concrete",
+      "description2": "Recognized expertise in the implementation of reinforced concrete and the execution of complex, durable structures.",
+      "title3": "Adaptation to Constraints",
+      "description3": "Our in-depth knowledge of the territory allows us to anticipate climatic, logistical and regulatory challenges specific to each project.",
+      "title4": "Structural Finishes",
+      "description4": "As a complement to the Rough Construction, we ensure the structural finishes necessary for the longevity and aesthetics of the structures.",
+      "EnSavoirDAvantage": "Learn more"
+    }
+  },
+  "projects": {
+    "title": "Achievements",
+    "hero": {
+      "title": "Our projects build trust",
+      "description": "Each site carried out by GNS BTP reflects our demand for quality and durability. From foundation to delivery, we build solid and aesthetic projects, adapted to the realities of Reunion Island.",
+      "learnMore": "Learn more"
+    },
+    "realization": {
+      "title": "Résidence Les Flamboyants",
+      "description": "Construction of a set of 24 social housing units in Saint-Denis, combining modern comfort and compliance with cyclonic standards.",
+      "date": "February 12, 2024"
+    },
+    "cta": {
+      "viewMore": "VIEW MORE PROJECTS",
+      "build": "BUILD",
+      "tagline": "Solid in execution, Transparent in commitment",
+      "appointment": "MAKE AN APPOINTMENT",
+      "aboutUs": "ABOUT US"
+    }
+  },
+  "news": {
+    "search": "Search",
+    "share": "Share",
+    "description": "Discover our news, advice and feedback on construction in Reunion Island. GNS BTP shares here its expertise, projects and vision of sustainable and controlled construction.",
+    "mainCard": {
+      "title": "Our projects build trust",
+      "description": "Each site carried out by GNS BTP reflects our demand for quality and durability. From foundation to delivery, we build solid and aesthetic projects, adapted to the realities of Reunion Island.",
+      "consult": "Consult",
+      "timeAgo": "2d ago"
+    },
+    "testimonials": {
+      "hashtag": "#LocalExpertise",
+      "description": "Our teams support you at every step to transform your ideas into concrete projects",
+      "date": "April 04, 2025"
+    },
+    "releases": {
+      "hashtag": "#LocalExpertise",
+      "description": "Our teams support you at every step to transform your ideas into concrete projects",
+      "date": "April 04, 2025",
+      "title": "Our press releases",
+      "learnMore": "Learn more",
+      "consult": "Consult"
+    },
+    "stayConnected": {
+      "title": "Stay connected",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "Linkedin",
+      "x": "X",
+      "youtube": "Youtube",
+      "like": "Like",
+      "follow": "Follow",
+      "subscribe": "Subscribe"
+    }
+  },
+  "pricing": {
+    "intro": "At GNS BTP, we believe that a well-estimated project is a well-launched construction site. Discover our service offers adapted to different types of constructions and get a clear and realistic estimate according to your needs.",
+    "title": "PRICING & QUOTES",
+    "choosePlan": "Choose your plan",
+    "plans": {
+      "collective": {
+        "title": "Collective building",
+        "price": "1,150€ / m²",
+        "delay": "Estimated time: 10 to 14 months",
+        "description": "Construction of residential or mixed buildings (housing + shops)"
+      },
+      "mostRequested": "Most requested",
+      "individual": {
+        "title": "Individual house",
+        "price": "295,000 €",
+        "delay": "Estimated time: 5 to 8 months",
+        "description": "Complete design and construction of an individual house with foundations, structures and structural work.",
+        "mostRequested": "Most requested"
+      },
+      "extension": {
+        "title": "Extension / elevation",
+        "price": "65,000 €",
+        "delay": "Estimated time: 3 to 5 months",
+        "description": "Expansion work, adding a floor or wing to an existing building."
+      },
+      "custom": {
+        "title": "Custom quote",
+        "description": "Contact us for more details"
+      }
+    },
+    "cta": {
+      "choose": "CHOOSE THIS QUOTE",
+      "request": "MAKE A REQUEST",
+      "appointment": "MAKE AN APPOINTMENT",
+      "buy": "BUY IT",
+      "getStarted": "Get Started",
+      "startFreeTrial": "Start Free Trial",
+      "contactSales": "Contact Sales",
+      "upgrade": "Upgrade",
+      "downgrade": "Downgrade",
+      "currentPlan": "Current Plan"
+    },
+    "features": {
+      "title": "Specific features",
+      "servicesOffered": "Services offered",
+      "option1": "Option 1",
+      "option2": "Option 2",
+      "option3": "Option 3",
+      "option4": "Option 4",
+      "unlimitedProjects": "Unlimited projects",
+      "teamMembers": "Team members",
+      "storage": "Storage",
+      "prioritySupport": "Priority support",
+      "customBranding": "Custom branding",
+      "advancedAnalytics": "Advanced analytics",
+      "apiAccess": "API access",
+      "dedicatedAccountManager": "Dedicated account manager"
+    },
+    "notConvinced": {
+      "title": "Still not convinced? Try us!",
+      "description1": "Don't worry, you're not signing anything right away.",
+      "description2": "We guide you step by step to build a project that suits you."
+    },
+    "faq": {
+      "question1": "Are the prices displayed on the website final?",
+      "answer1": "No, the prices shown are indicative estimates based on typical projects. The final cost depends on the nature of the land, materials chosen, finishing level, and local constraints specific to each construction site.",
+      "question2": "How can I get an accurate quote for my project?",
+      "answer2": "Contact us via our quote request form or by phone. We will organize a site visit to assess your project and provide you with a detailed quote tailored to your specific needs.",
+      "question3": "What are your typical project timelines?",
+      "answer3": "Project timelines vary depending on complexity and scale, but we provide detailed schedules during the consultation phase.",
+      "question4": "Do you offer post-construction support?",
+      "answer4": "Yes, we provide comprehensive after-sales service and warranty coverage for all our construction projects."
+    },
+    "checkout": {
+      "title": "Checkout",
+      "completePurchase": "Complete Purchase",
+      "paymentDetails": "Payment Details",
+      "orderSummary": "Order Summary",
+      "billingAddress": "Billing Address",
+      "sameAsShipping": "Same as shipping address",
+      "couponCode": "Coupon Code",
+      "applyCoupon": "Apply Coupon",
+      "invalidCoupon": "Invalid coupon code",
+      "total": "Total",
+      "subtotal": "Subtotal",
+      "tax": "Tax",
+      "shipping": "Shipping",
+      "discount": "Discount",
+      "securePayment": "Secure Payment",
+      "stripeSecure": "Powered by Stripe",
+      "cardNumber": "Card Number",
+      "expiryDate": "Expiry Date",
+      "cvc": "CVC",
+      "nameOnCard": "Name on Card",
+      "processing": "Processing your payment...",
+      "success": "Payment Successful!",
+      "failed": "Payment Failed",
+      "error": "Payment Error",
+      "tryAgain": "Try Again"
+    },
+    "confirmation": {
+      "title": "Order Confirmation",
+      "thankYou": "Thank You for Your Purchase!",
+      "orderNumber": "Order Number",
+      "emailSent": "A confirmation email has been sent to",
+      "whatsNext": "What's Next?",
+      "downloadProduct": "Download your product",
+      "accessAccount": "Access your account",
+      "contactSupport": "Contact Support",
+      "continueShopping": "Continue Shopping"
+    },
+    "planNotFound": "Product Not Found",
+    "loading": "Loading...",
+    "backToPricing": "Back to pricing",
+    "processing": "Processing...",
+    "securePayment": "100% secure payment",
+    "cancelAnytime": "Cancel anytime",
+    "checkoutTitle": "Complete your purchase",
+    "backToProduct": "Back to product",
+    "loadingCheckout": "Preparing secure payment...",
+    "paymentInfo": "Fill in your payment information below",
+    "stripeSecure": "Secure payment by Stripe",
+    "productIdRequired": "Product ID required",
+    "serverError": "Server error while creating payment",
+    "paymentSystemError": "Payment system error",
+    "checkoutSessionError": "Error creating payment session",
+    "unknownError": "An unknown error occurred",
+    "checkoutReady": "Payment ready - Fill in your information",
+    "paymentSuccess": "Payment successful!",
+    "paymentFailed": "Payment failed",
+    "tryAgain": "Try again",
+    "paymentProcessing": "Payment processing...",
+    "redirecting": "Redirecting...",
+    "orderConfirmation": "Order confirmation",
+    "thankYouMessage": "Thank you for your purchase!",
+    "emailConfirmation": "A confirmation email has been sent to",
+    "viewOrder": "View order",
+    "paymentMethod": "Payment method",
+    "billingAddress": "Billing address",
+    "couponCode": "Coupon code",
+    "applyCoupon": "Apply",
+    "invalidCoupon": "Invalid coupon code",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "tax": "Tax",
+    "shipping": "Shipping",
+    "discount": "Discount",
+    "free": "Free",
+    "month": "month",
+    "year": "year",
+    "lifetime": "lifetime",
+    "popular": "Popular",
+    "bestValue": "Best value",
+    "savePercentage": "Save {percentage}%",
+    "mostPopular": "Most popular",
+    "enterprise": "Enterprise",
+    "customPlan": "Custom plan",
+    "contactSales": "Contact sales",
+    "startFreeTrial": "Start free trial",
+    "currentPlan": "Current plan",
+    "changePlan": "Change plan",
+    "cancelSubscription": "Cancel subscription",
+    "subscriptionActive": "Subscription active",
+    "subscriptionCancelled": "Subscription cancelled",
+    "nextBillingDate": "Next billing date",
+    "billingHistory": "Billing history",
+    "invoice": "Invoice",
+    "downloadInvoice": "Download invoice",
+    "refundPolicy": "Refund policy",
+    "termsOfService": "Terms of service",
+    "privacyPolicy": "Privacy policy",
+    "moneyBackGuarantee": "30-day money-back guarantee",
+    "sslEncryption": "SSL encryption",
+    "paymentMethods": "Payment methods accepted",
+    "needHelp": "Need help?",
+    "liveChat": "Live chat",
+    "emailSupport": "Email support",
+    "phoneSupport": "Phone support"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Information",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "reset": "Reset",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "refresh": "Refresh",
+    "close": "Close",
+    "open": "Open",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "apply": "Apply",
+    "clear": "Clear",
+    "select": "Select",
+    "deselect": "Deselect",
+    "all": "All",
+    "none": "None",
+    "required": "Required",
+    "optional": "Optional",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "errors": {
+    "productNotFound": "Product not found",
+    "serverError": "Server error",
+    "paymentError": "Payment error",
+    "networkError": "Network error",
+    "validationError": "Validation error",
+    "unauthorized": "Unauthorized",
+    "forbidden": "Forbidden",
+    "notFound": "Not found",
+    "timeout": "Request timeout",
+    "unknown": "Unknown error occurred"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "phone": "Please enter a valid phone number",
+    "cardNumber": "Please enter a valid card number",
+    "expiryDate": "Please enter a valid expiry date",
+    "cvc": "Please enter a valid CVC",
+    "zipCode": "Please enter a valid ZIP code"
+  },
+  "contact": {
+    "title": "Let's get in touch!",
+    "description": "Do you have a question or need help? Contact us by email, phone or via the form below. We will be happy to assist you.",
+    "tagline": "We will be happy to assist you.",
+    "form": {
+      "name": "First & last name",
+      "email": "Email",
+      "message": "Your message"
+    },
+    "info": {
+      "title": "Contact",
+      "phone": "+ 262 2 62 28 26 25",
+      "email": "gnsbtp@gmail.com",
+      "location": "Reunion Island"
+    },
+    "social": {
+      "title": "Follow us"
+    }
+  },
+  "success": {
+    "title": "Payment Successful!",
+    "message": "Thank you for your purchase. You will receive an email confirmation shortly.",
+    "cta": "Back to Home"
+  },
+  "cancel": {
+    "title": "Payment Canceled",
+    "message": "Your payment was canceled. You have not been charged.",
+    "cta": "Back to Pricing"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Overview of your projects and activities",
+    "stats": {
+      "activeProjects": "Active Projects",
+      "pendingQuotes": "Pending Quotes",
+      "completedSites": "Delivered Sites",
+      "clientSatisfaction": "Average Rating"
+    },
+    "projects": {
+      "title": "Recent Projects",
+      "viewAll": "View All",
+      "columns": {
+        "name": "Project",
+        "client": "Client",
+        "status": "Status",
+        "progress": "Progress",
+        "budget": "Budget"
+      },
+      "status": {
+        "En cours": "In Progress",
+        "Planifié": "Planned",
+        "Terminé": "Completed"
+      }
+    },
+    "quotes": {
+      "title": "Latest Quotes",
+      "create": "New Quote",
+      "columns": {
+        "reference": "Ref",
+        "client": "Client",
+        "amount": "Amount",
+        "status": "Status"
+      },
+      "status": {
+        "En attente": "Pending",
+        "Accepté": "Accepted",
+        "Refusé": "Declined"
+      }
+    },
+    "activities": {
+      "title": "Recent Activities"
+    },
+    "actions": {
+      "newQuote": "Request Quote",
+      "viewProjects": "My Projects",
+      "contactSupport": "Customer Support",
+      "documents": "Documents"
+    }
+  },
+  "datatable": {
+    "select": "Select",
+    "name": "Name",
+    "packageName": "Package Name",
+    "price": "Price",
+    "category": "Category",
+    "targetProfile": "Target Profile",
+    "region": "Region",
+    "status": "Status",
+    "features": "Features",
+    "createdAt": "Creation Date",
+    "actions": "Actions",
+    "products": "Products",
+    "payment": "Payment",
+    "customer": "Customer",
+    "package": "Package",
+    "amount": "Amount",
+    "paymentDate": "Payment Date",
+    "profile": "Profile",
+    "lastActivity": "Last Activity",
+    "administrator": "Administrator",
+    "role": "Role",
+    "permissions": "Permissions",
+    "lastLogin": "Last Login",
+    "active": "Active",
+    "inactive": "Inactive",
+    "popular": "Popular",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "transactionId": "Transaction ID",
+    "slug": "Slug",
+    "productsCount": "Products",
+    "noProduct": "No product",
+    "bankTransfer": "Bank Transfer",
+    "card": "Card",
+    "pendingInformation": "Pending Information",
+    "inProgress": "In Progress",
+    "in_progress": "In Progress",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "refunded": "Refunded",
+    "succeeded": "Succeeded",
+    "pending": "Pending",
+    "failed": "Failed",
+    "processing": "Processing",
+    "canceled": "Canceled",
+    "requires_action": "Requires Action",
+    "requires_payment_method": "Requires Payment Method",
+    "requires_capture": "Requires Capture",
+    "paid": "Paid",
+    "incomplete": "Incomplete",
+    "oneTime": "one-time",
+    "subscription": "Subscription",
+    "refund": "Refund",
+    "resendEmail": "Resend Email",
+    "sendEmail": "Send Email",
+    "trash": "Trash",
+    "superAdmin": "Super Admin",
+    "unknown": "unknown",
+    "never": "Never",
+    "notDefined": "Not defined",
+    "noResultYet": "No result yet",
+    "of": "of",
+    "previous": "Previous",
+    "next": "Next",
+    "rowsPerPage": "Rows per page",
+    "all": "All",
+    "feature": "feature",
+    "user": "user",
+    "users": "users",
+    "settings": "Settings",
+    "dates": "Purchase Date",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "trialing": "Trialing",
+    "expired": "Expired",
+    "paused": "Paused",
+    "pastDue": "Past Due",
+    "unpaid": "Unpaid",
+    "startDate": "Start Date",
+    "nextBilling": "Next Billing",
+    "cancelSubscription": "Cancel Subscription",
+    "changed": "Changed",
+    "purchaseDate": "Purchase Date",
+    "search": "Search"
+  }
+}
