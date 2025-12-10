@@ -9,7 +9,7 @@ import { useState } from "react";
 import { Loader2, Key } from "lucide-react";
 import { signIn } from "@/lib/auth-client";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { redirect, useRouter, useSearchParams } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useLocale } from "next-intl";
 import { useAuth } from "@/context/AuthContext";
@@ -94,8 +94,8 @@ export default function LoginForm() {
                 loading,
                 setLoading
               });
-              router.push("/dashboard");
               console.log('idididirrrrrr', callbackUrl, process.env.BETTER_AUTH_URL, process.env.DATABASE_URL)
+              redirect(callbackUrl);
             }}
           >
             {loading ? (
