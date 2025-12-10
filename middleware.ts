@@ -28,10 +28,10 @@ export default function middleware(request: NextRequest) {
   const sessionToken = request.cookies.get('better-auth.session_token');
 
   if (isAuthRoute && sessionToken) {
-    const callbackUrl = request.nextUrl.searchParams.get('callbackUrl');
-    if (callbackUrl) {
-      return NextResponse.redirect(new URL(callbackUrl, request.url));
-    }
+    // const callbackUrl = request.nextUrl.searchParams.get('callbackUrl');
+    // if (callbackUrl) {
+    //   return NextResponse.redirect(new URL(callbackUrl, request.url));
+    // }
     return NextResponse.redirect(new URL(`/${locale}/dashboard`, request.url));
   }
 
