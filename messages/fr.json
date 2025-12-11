@@ -669,7 +669,8 @@
       "clientSatisfaction": "Note moyenne",
       "totalRevenue": "Total Revenus",
       "completedPayments": "Paiements Validés",
-      "averageCart": "Panier Moyen"
+      "averageCart": "Panier Moyen",
+      "change": "par rapport au mois dernier"
     },
     "projects": {
       "title": "Projets Récents",

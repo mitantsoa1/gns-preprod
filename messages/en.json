@@ -669,7 +669,8 @@
       "clientSatisfaction": "Average Rating",
       "totalRevenue": "Total Revenue",
       "completedPayments": "Completed Payments",
-      "averageCart": "Average Cart"
+      "averageCart": "Average Cart",
+      "change": "compared to last month"
     },
     "projects": {
       "title": "Recent Projects",

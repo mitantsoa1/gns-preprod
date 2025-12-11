@@ -27,17 +27,17 @@ export default function middleware(request: NextRequest) {
   // Check for session token
   const sessionToken = request.cookies.get('better-auth.session_token');
 
-  // if (isAuthRoute && sessionToken) {
-  //   // const callbackUrl = request.nextUrl.searchParams.get('callbackUrl');
-  //   // if (callbackUrl) {
-  //   //   return NextResponse.redirect(new URL(callbackUrl, request.url));
-  //   // }
-  //   return NextResponse.redirect(new URL(`/${locale}/dashboard`, request.url));
-  // }
+  if (isAuthRoute && sessionToken) {
+    const callbackUrl = request.nextUrl.searchParams.get('callbackUrl');
+    if (callbackUrl) {
+      return NextResponse.redirect(new URL(callbackUrl, request.url));
+    }
+    return NextResponse.redirect(new URL(`/${locale}/dashboard`, request.url));
+  }
 
-  // if (isProtectedRoute && !sessionToken) {
-  //   // return NextResponse.redirect(new URL(`/${locale}/login`, request.url));
-  // }
+  if (isProtectedRoute && !sessionToken) {
+    return NextResponse.redirect(new URL(`/${locale}/login`, request.url));
+  }
 
   // Appliquer le middleware next-intl pour toutes les autres routes
   return intlMiddleware(request);
