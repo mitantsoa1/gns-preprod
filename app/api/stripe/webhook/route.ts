@@ -139,7 +139,7 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
         stripePaymentIntentId: session.payment_intent as string | null,
         amount: Math.round((session.amount_total || 0) / 100),
         currency: session.currency || 'eur',
-        status: session.payment_status === 'paid',
+        status: session.payment_status === 'paid' ? 'succeeded' : 'failed',
         paymentMethod: session.payment_method_types?.[0] || null,
         customerEmail: session.customer_details?.email || null,
         customerName: session.customer_details?.name || null,
