@@ -20,7 +20,7 @@ import React from "react";
  * Layout pour les routes protégées
  * Vérifie l'authentification de l'utilisateur avant d'afficher le contenu
  */
-export default async function ProtectedLayout({
+export default function ProtectedLayout({
     children
 }: {
     children: React.ReactNode;

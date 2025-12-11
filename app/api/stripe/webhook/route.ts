@@ -476,42 +476,42 @@ async function triggerRefundActions(payment: any, charge: Stripe.Charge, status:
 }
 
 // Fonction pour créer un paiement minimal depuis une charge (fallback)
-async function createMinimalPaymentFromCharge(charge: Stripe.Charge) {
-    try {
-        // Seulement si on a des informations minimales
-        if (!charge.payment_intent && !charge.customer) return;
+// async function createMinimalPaymentFromCharge(charge: Stripe.Charge) {
+//     try {
+//         // Seulement si on a des informations minimales
+//         if (!charge.payment_intent && !charge.customer) return;
 
-        const metadata = charge.metadata || {};
+//         const metadata = charge.metadata || {};
 
-        const payment = await prisma.payment.create({
-            data: {
-                stripeChargeId: charge.id,
-                stripePaymentIntentId: charge.payment_intent as string || null,
-                amount: Math.round(charge.amount / 100),
-                currency: charge.currency,
-                status: charge.refunded ? 'refunded' :
-                    charge.disputed ? 'disputed' :
-                        charge.paid ? 'succeeded' : 'pending',
-                paymentMethod: charge.payment_method_details?.type || null,
-                customerEmail: charge.billing_details?.email || null,
-                customerName: charge.billing_details?.name || null,
-                productId: metadata.productId || null,
-                productName: metadata.productName || charge.description || 'Unknown Product',
-                quantity: parseInt(metadata.quantity || '1'),
-                amountRefunded: charge.amount_refunded ? Math.round(charge.amount_refunded / 100) : null,
-                receiptUrl: charge.receipt_url || null,
-                // invoiceId: charge.invoice || null,
-                disputed: charge.disputed || false,
-                paidAt: charge.created ? new Date(charge.created * 1000) : null,
-                refundedAt: charge.amount_refunded ? new Date() : null,
-                metadata: metadata,
-            },
-        });
+//         const payment = await prisma.payment.create({
+//             data: {
+//                 stripeChargeId: charge.id,
+//                 stripePaymentIntentId: charge.payment_intent as string || null,
+//                 amount: Math.round(charge.amount / 100),
+//                 currency: charge.currency,
+//                 status: charge.refunded ? 'refunded' :
+//                     charge.disputed ? 'disputed' :
+//                         charge.paid ? 'succeeded' : 'pending',
+//                 paymentMethod: charge.payment_method_details?.type || null,
+//                 customerEmail: charge.billing_details?.email || null,
+//                 customerName: charge.billing_details?.name || null,
+//                 productId: metadata.productId || null,
+//                 productName: metadata.productName || charge.description || 'Unknown Product',
+//                 quantity: parseInt(metadata.quantity || '1'),
+//                 amountRefunded: charge.amount_refunded ? Math.round(charge.amount_refunded / 100) : null,
+//                 receiptUrl: charge.receipt_url || null,
+//                 // invoiceId: charge.invoice || null,
+//                 disputed: charge.disputed || false,
+//                 paidAt: charge.created ? new Date(charge.created * 1000) : null,
+//                 refundedAt: charge.amount_refunded ? new Date() : null,
+//                 metadata: metadata,
+//             },
+//         });
 
-        console.log('💾 Created minimal payment from charge:', payment.id);
-        return payment;
-    } catch (error) {
-        console.error('❌ Error creating payment from charge:', error);
-        return null;
-    }
-}
+//         console.log('💾 Created minimal payment from charge:', payment.id);
+//         return payment;
+//     } catch (error) {
+//         console.error('❌ Error creating payment from charge:', error);
+//         return null;
+//     }
+// }
