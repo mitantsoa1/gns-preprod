@@ -177,7 +177,7 @@ async function handlePaymentIntentSucceeded(paymentIntent: Stripe.PaymentIntent)
 
     try {
         // 1. D'abord essayer de trouver un paiement existant par payment_intent_id
-        let existingPayment = await prisma.payment.findFirst({
+        const existingPayment = await prisma.payment.findFirst({
             where: {
                 stripePaymentIntentId: paymentIntent.id
             },
@@ -243,7 +243,7 @@ async function triggerPostPaymentActions(payment: any) {
 async function handlePaymentIntentFailed(paymentIntent: Stripe.PaymentIntent) {
     console.log('❌ Payment intent failed:', paymentIntent.id);
 
-    let existingPayment = await prisma.payment.findFirst({
+    const existingPayment = await prisma.payment.findFirst({
         where: {
             stripePaymentIntentId: paymentIntent.id
         },
