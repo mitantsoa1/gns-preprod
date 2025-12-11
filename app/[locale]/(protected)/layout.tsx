@@ -31,9 +31,9 @@ export default async function ProtectedLayout({
     // console.log("Session utilisateur client:", users);
 
     // Rediriger vers la page de connexion si non authentifié
-    // if (!session) {
-    //     redirect(`/${locale}/login`);
-    // }
+    if (!session) {
+        redirect(`/${locale}/login`);
+    }
 
     return <>{children}</>;
 }
