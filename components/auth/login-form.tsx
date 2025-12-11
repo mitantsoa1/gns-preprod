@@ -13,6 +13,7 @@ import { redirect, useRouter, useSearchParams } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useLocale } from "next-intl";
 import { useAuth } from "@/context/AuthContext";
+import Image from "next/image";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -27,8 +28,19 @@ export default function LoginForm() {
   const router = useRouter();
 
   return (
+
     <Card className="max-w-md">
       <CardHeader>
+        <div className="w-full flex items-center justify-center" >
+          <Link href={"/"} className="cursor-p">
+            <Image
+              src="/GNS.png"
+              alt="Logo"
+              width={100}
+              height={100}
+            />
+          </Link>
+        </div>
         <CardTitle className="text-lg md:text-xl">Sign In</CardTitle>
         <CardDescription className="text-xs md:text-sm">
           Enter your email below to login to your account

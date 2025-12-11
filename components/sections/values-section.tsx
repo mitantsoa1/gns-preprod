@@ -2,13 +2,14 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useState, useRef } from 'react';
 
 export function ValuesSection() {
   const t = useTranslations();
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const locale = useLocale()
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -67,13 +68,13 @@ export function ValuesSection() {
             style={{ transitionDelay: '600ms' }}
           >
             <Link
-              href="#contact"
+              href={`${locale}/contact`}
               className="bg-black text-white px-8 py-3 rounded-sm text-sm font-medium hover:bg-gray-800 transition-colors uppercase tracking-wide"
             >
               {t('values.buttons.appointment')}
             </Link>
             <Link
-              href="#about"
+              href={`${locale}/about`}
               className="bg-transparent border-2 border-black text-black px-8 py-3 rounded-sm text-sm font-medium hover:bg-black hover:text-white transition-colors uppercase tracking-wide"
             >
               {t('values.buttons.about')}

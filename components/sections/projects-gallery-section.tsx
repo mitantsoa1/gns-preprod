@@ -1,8 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useState, useRef } from 'react';
+import Link from 'next/link';
 
 export function ProjectsGallerySection() {
   const t = useTranslations('projectsHomepage');
@@ -10,6 +11,7 @@ export function ProjectsGallerySection() {
   const [visibleProjects, setVisibleProjects] = useState<Set<number>>(new Set());
   const headerRef = useRef<HTMLDivElement>(null);
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const locale = useLocale()
 
   const projects = [
     {
@@ -141,12 +143,12 @@ export function ProjectsGallerySection() {
                 {t('description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="bg-black text-white px-6 py-3 text-sm font-semibold hover:bg-gray-800 transition-colors rounded-lg">
+                <Link href={`${locale}/projects`} className="bg-black text-white px-6 py-3 text-sm font-semibold hover:bg-gray-800 transition-colors rounded-lg flex justify-center items-center">
                   {t('viewProjects')}
-                </button>
-                <button className="border-2 border-black text-black px-6 py-3 text-sm font-semibold hover:bg-black hover:text-white transition-colors rounded-lg">
+                </Link>
+                <Link href={`${locale}/about`} className="border-2 border-black text-black px-6 py-3 text-sm font-semibold hover:bg-black hover:text-white transition-colors rounded-lg">
                   {t('aboutUs')}
-                </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -6,11 +6,13 @@ import FAQ from '@/components/FAQ'
 import DownloadButton from '@/components/DownloadButton'
 import { motion } from 'framer-motion'
 import AnimatedElement from '@/components/animations/AnimatedElement'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { FaqData } from '@/types'
+import ButtonPrimary from '@/components/ButtonPrimary'
 
 const AboutClientPage = () => {
     const t = useTranslations('about')
+    const locale = useLocale()
 
     const faqData: FaqData[] = [
         {
@@ -145,7 +147,7 @@ const AboutClientPage = () => {
                     </div>
                 </div>
                 <div className="py-4 flex justify-center items-center">
-                    <ButtonText className='text-sm font-semibold'>{t('cta')}</ButtonText>
+                    <ButtonPrimary className='text-sm font-semibold' href={`/${locale}/contact`} text={t('cta')} />
                 </div>
             </section>
 
@@ -165,7 +167,7 @@ const AboutClientPage = () => {
                         </AnimatedElement>
                     </div>
 
-                    <div className='w-full md:w-3/5 bg-black py-6 px-10 rounded-lg'>
+                    <div className='w-full md:w-3/5 bg-black py-6 px-10 rounded-lg mr-2'>
                         <div className='space-y-3'>
                             {strengths.map((item, index) => (
                                 <div key={index} className='flex items-start gap-3'>
@@ -178,7 +180,7 @@ const AboutClientPage = () => {
                         </div>
 
                         <div className='mt-8'>
-                            <ButtonText className='text-sm font-semibold bg-white text-black hover:bg-black/20'><span className='text-black hover:text-white'>{t('cta')}</span></ButtonText>
+                            <ButtonPrimary className='text-sm font-semibold bg-white text-black hover:bg-gray-300 ' href={`/${locale}/contact`} text={t('cta')} />
                         </div>
                     </div>
                 </div>

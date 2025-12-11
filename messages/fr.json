@@ -799,5 +799,111 @@
     "changed": "Modifié",
     "purchaseDate": "Date d'achat",
     "search": "Rechercher"
+  },
+  "downloadPdfPage": {
+    "title": "Documents à télécharger",
+    "description": "Retrouvez ici l'ensemble de nos brochures, certifications et documents techniques en format PDF.",
+    "download": "Télécharger",
+    "updated": "Mis à jour: {date}",
+    "documents": {
+      "brochure": {
+        "title": "Brochure GNS BTP",
+        "description": "Présentation complète de nos services et de notre expertise en gros œuvre."
+      },
+      "catalog": {
+        "title": "Catalogue des Prestations",
+        "description": "Détails techniques et tarifs indicatifs de nos interventions."
+      },
+      "certifications": {
+        "title": "Certifications Qualibat",
+        "description": "Nos attestations et certifications garantissant la qualité de nos travaux."
+      },
+      "csr": {
+        "title": "Charte RSE",
+        "description": "Nos engagements en matière de responsabilité sociétale et environnementale."
+      }
+    }
+  },
+  "faqPage": {
+    "title": "Foire Aux Questions",
+    "description": "Vous avez des questions ? Nous avons les réponses. Retrouvez ici les interrogations les plus fréquentes de nos clients.",
+    "items": {
+      "islandWide": {
+        "question": "Intervenez-vous sur toute l'île de La Réunion ?",
+        "answer": "Oui, GNS BTP intervient sur l'ensemble de l'île de La Réunion. Que votre projet soit situé dans le Nord, le Sud, l'Est ou l'Ouest, nos équipes sont mobiles et équipées pour se déplacer sur votre chantier."
+      },
+      "quoteDelay": {
+        "question": "Quel est le délai moyen pour obtenir un devis ?",
+        "answer": "Pour les projets standards, nous nous engageons à fournir un devis détaillé sous 5 à 7 jours ouvrés après la visite technique. Pour les projets plus complexes nécessitant des études approfondies, le délai peut varier entre 10 et 15 jours."
+      },
+      "warranty": {
+        "question": "Vos travaux sont-ils couverts par une garantie décennale ?",
+        "answer": "Absolument. Conformément à la législation en vigueur, tous nos travaux de gros œuvre et de structure sont couverts par une assurance garantie décennale. Nous fournissons systématiquement notre attestation d'assurance avant le démarrage du chantier."
+      },
+      "monitoring": {
+        "question": "Comment se déroule le suivi de chantier ?",
+        "answer": "Un chef de chantier dédié est nommé pour chaque projet. Il est votre interlocuteur privilégié et assure le suivi quotidien des travaux. Des réunions de chantier hebdomadaires sont organisées pour vous tenir informé de l'avancement et valider les étapes clés."
+      },
+      "turnkey": {
+        "question": "Proposez-vous des constructions clé en main ?",
+        "answer": "Nous sommes spécialisés dans le gros œuvre, mais nous travaillons en étroite collaboration avec un réseau de partenaires de confiance (architectes, second œuvre) pour vous accompagner sur des projets globaux si nécessaire."
+      },
+      "payment": {
+        "question": "Quelles sont les modalités de paiement ?",
+        "answer": "Généralement, le règlement s'effectue par échelonnement selon l'avancement des travaux : un acompte à la signature, puis des situations de travaux mensuelles ou par phase validée, et le solde à la réception du chantier."
+      }
+    }
+  },
+  "privacyPage": {
+    "title": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour : {date}",
+    "sections": {
+      "intro": {
+        "title": "1. Introduction",
+        "content": "GNS BTP (\"nous\", \"notre\" ou \"nos\") s'engage à protéger la vie privée des utilisateurs de notre site web. Cette politique de confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations personnelles."
+      },
+      "collection": {
+        "title": "2. Collecte des Informations",
+        "content": "Nous pouvons collecter les types d'informations suivants :",
+        "list": {
+          "item1": "<strong>Informations d'identification personnelle :</strong> Nom, adresse e-mail, numéro de téléphone, adresse postale, lorsque vous remplissez nos formulaires de contact ou de demande de devis.",
+          "item2": "<strong>Informations techniques :</strong> Adresse IP, type de navigateur, pages visitées, temps passé sur le site, via des cookies et technologies similaires."
+        }
+      },
+      "usage": {
+        "title": "3. Utilisation des Informations",
+        "content": "Nous utilisons vos informations pour :",
+        "list": {
+          "item1": "Traiter vos demandes de devis et vous contacter concernant votre projet.",
+          "item2": "Améliorer notre site web et nos services.",
+          "item3": "Vous envoyer des informations administratives ou promotionnelles (si vous y avez consenti).",
+          "item4": "Respecter nos obligations légales."
+        }
+      },
+      "protection": {
+        "title": "4. Protection des Données",
+        "content": "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos données personnelles contre l'accès non autorisé, la modification, la divulgation ou la destruction."
+      },
+      "cookies": {
+        "title": "5. Cookies",
+        "content": "Notre site utilise des cookies pour améliorer votre expérience de navigation. Vous pouvez configurer votre navigateur pour refuser tous les cookies ou pour vous avertir lorsqu'un cookie est envoyé."
+      },
+      "rights": {
+        "title": "6. Vos Droits",
+        "content": "Conformément au RGPD, vous disposez des droits suivants concernant vos données personnelles :",
+        "list": {
+          "item1": "Droit d'accès et de rectification.",
+          "item2": "Droit à l'effacement (\"droit à l'oubli\").",
+          "item3": "Droit à la limitation du traitement.",
+          "item4": "Droit à la portabilité des données.",
+          "item5": "Droit d'opposition."
+        },
+        "contact": "Pour exercer ces droits, veuillez nous contacter à l'adresse suivante : contact@gnsbtp.re"
+      },
+      "contact": {
+        "title": "7. Nous Contacter",
+        "content": "Si vous avez des questions concernant cette politique de confidentialité, n'hésitez pas à nous contacter."
+      }
+    }
   }
 }

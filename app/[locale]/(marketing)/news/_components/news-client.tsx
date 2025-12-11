@@ -10,6 +10,7 @@ import ReleaseCard from '@/components/news/ReleaseCard2'
 import { Calendar1, Clock4, Search, Share2 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const NewsClientPage = () => {
@@ -317,120 +318,130 @@ const NewsClientPage = () => {
 
                                 {/* Facebook */}
                                 <AnimatedElement animation="fade" delay={0.3}>
-                                    <div
-                                        className='flex items-center justify-between p-3 sm:p-4 hover:bg-gray-50 rounded-lg cursor-pointer min-h-[70px]'
-                                        style={{
-                                            backgroundImage: 'url(/news/facebook.svg)',
-                                            backgroundSize: 'cover',
-                                            backgroundPosition: 'center',
-                                        }}
-                                    >
-                                        <div className='flex items-center gap-2 sm:gap-3'>
-                                            <div className='w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center backdrop-blur-sm bg-black/10'>
-                                                <img src="/news/fb.svg" alt="Facebook logo" className="w-5 h-5 sm:w-6 sm:h-6" />
+                                    <Link href="https://www.facebook.com/gnsbtp" target="_blank">
+                                        <div
+                                            className='flex items-center justify-between p-3 sm:p-4 hover:bg-gray-50 rounded-lg cursor-pointer min-h-[70px]'
+                                            style={{
+                                                backgroundImage: 'url(/news/facebook.svg)',
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        >
+                                            <div className='flex items-center gap-2 sm:gap-3'>
+                                                <div className='w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center backdrop-blur-sm bg-black/10'>
+                                                    <img src="/news/fb.svg" alt="Facebook logo" className="w-5 h-5 sm:w-6 sm:h-6" />
+                                                </div>
+                                                <span className='font-medium font-poppins text-white text-sm sm:text-base'>Facebook</span>
                                             </div>
-                                            <span className='font-medium font-poppins text-white text-sm sm:text-base'>Facebook</span>
-                                        </div>
 
-                                        <div className='flex items-center gap-4 sm:gap-6'>
-                                            <span className='font-medium font-poppins text-white text-xs sm:text-sm'>Like</span>
-                                            <span className=' font-poppins text-white text-xs sm:text-sm font-bold'>10k</span>
+                                            <div className='flex items-center gap-4 sm:gap-6'>
+                                                <span className='font-medium font-poppins text-white text-xs sm:text-sm'>Like</span>
+                                                <span className=' font-poppins text-white text-xs sm:text-sm font-bold'>10k</span>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </AnimatedElement>
 
                                 {/* Instagram */}
                                 <AnimatedElement animation="fade" delay={0.5}>
-                                    <div
-                                        className='flex items-center justify-between p-3 sm:p-4 hover:bg-gray-50 rounded-lg cursor-pointer min-h-[70px]'
-                                        style={{
-                                            backgroundImage: 'url(/news/instagram.svg)',
-                                            backgroundSize: 'cover',
-                                            backgroundPosition: 'center',
-                                        }}
-                                    >
-                                        <div className='flex items-center gap-2 sm:gap-3'>
-                                            <div className='w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center backdrop-blur-sm bg-black/10'>
-                                                <img src="/news/insta.svg" alt="Instagram logo" className="w-5 h-5 sm:w-6 sm:h-6" />
+                                    <Link href="https://www.instagram.com/gnsbtp" target="_blank">
+                                        <div
+                                            className='flex items-center justify-between p-3 sm:p-4 hover:bg-gray-50 rounded-lg cursor-pointer min-h-[70px]'
+                                            style={{
+                                                backgroundImage: 'url(/news/instagram.svg)',
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        >
+                                            <div className='flex items-center gap-2 sm:gap-3'>
+                                                <div className='w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center backdrop-blur-sm bg-black/10'>
+                                                    <img src="/news/insta.svg" alt="Instagram logo" className="w-5 h-5 sm:w-6 sm:h-6" />
+                                                </div>
+                                                <span className='font-medium font-poppins text-white text-sm sm:text-base'>Instagram</span>
                                             </div>
-                                            <span className='font-medium font-poppins text-white text-sm sm:text-base'>Instagram</span>
-                                        </div>
 
-                                        <div className='flex items-center gap-4 sm:gap-6'>
-                                            <span className='font-medium font-poppins text-white text-xs sm:text-sm'>Follow</span>
-                                            <span className=' font-poppins text-white text-xs sm:text-sm font-bold'>2k</span>
+                                            <div className='flex items-center gap-4 sm:gap-6'>
+                                                <span className='font-medium font-poppins text-white text-xs sm:text-sm'>Follow</span>
+                                                <span className=' font-poppins text-white text-xs sm:text-sm font-bold'>2k</span>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </AnimatedElement>
 
                                 {/* Linkedin */}
                                 <AnimatedElement animation="fade" delay={0.7}>
-                                    <div
-                                        className='flex items-center justify-between p-3 sm:p-4 hover:bg-gray-50 rounded-lg cursor-pointer min-h-[70px]'
-                                        style={{
-                                            backgroundImage: 'url(/news/linkedin.svg)',
-                                            backgroundSize: 'cover',
-                                            backgroundPosition: 'center',
-                                        }}
-                                    >
-                                        <div className='flex items-center gap-2 sm:gap-3'>
-                                            <div className='w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center backdrop-blur-sm bg-black/10'>
-                                                <img src="/news/icons_linkedin.svg" alt="Linkedin logo" className="w-5 h-5 sm:w-6 sm:h-6" />
+                                    <Link href="https://www.linkedin.com/company/gnsbtp" target="_blank">
+                                        <div
+                                            className='flex items-center justify-between p-3 sm:p-4 hover:bg-gray-50 rounded-lg cursor-pointer min-h-[70px]'
+                                            style={{
+                                                backgroundImage: 'url(/news/linkedin.svg)',
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        >
+                                            <div className='flex items-center gap-2 sm:gap-3'>
+                                                <div className='w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center backdrop-blur-sm bg-black/10'>
+                                                    <img src="/news/icons_linkedin.svg" alt="Linkedin logo" className="w-5 h-5 sm:w-6 sm:h-6" />
+                                                </div>
+                                                <span className='font-medium font-poppins text-white text-sm sm:text-base'>Linkedin</span>
                                             </div>
-                                            <span className='font-medium font-poppins text-white text-sm sm:text-base'>Linkedin</span>
-                                        </div>
 
-                                        <div className='flex items-center gap-4 sm:gap-6'>
-                                            <span className='font-medium font-poppins text-white text-xs sm:text-sm'>Follow</span>
-                                            <span className=' font-poppins text-white text-xs sm:text-sm font-bold'>800</span>
+                                            <div className='flex items-center gap-4 sm:gap-6'>
+                                                <span className='font-medium font-poppins text-white text-xs sm:text-sm'>Follow</span>
+                                                <span className=' font-poppins text-white text-xs sm:text-sm font-bold'>800</span>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </AnimatedElement>
                                 {/* X */}
                                 <AnimatedElement animation="fade" delay={0.9}>
-                                    <div
-                                        className='flex items-center justify-between p-3 sm:p-4 hover:bg-gray-50 rounded-lg cursor-pointer min-h-[70px]'
-                                        style={{
-                                            backgroundImage: 'url(/news/x.svg)',
-                                            backgroundSize: 'cover',
-                                            backgroundPosition: 'center',
-                                        }}
-                                    >
-                                        <div className='flex items-center gap-2 sm:gap-3'>
-                                            <div className='w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center backdrop-blur-sm bg-black/10'>
-                                                <img src="/news/x-logo.svg" alt="X logo" className="w-5 h-5 sm:w-6 sm:h-6" />
+                                    <Link href="https://x.com/gnsbtp" target="_blank">
+                                        <div
+                                            className='flex items-center justify-between p-3 sm:p-4 hover:bg-gray-50 rounded-lg cursor-pointer min-h-[70px]'
+                                            style={{
+                                                backgroundImage: 'url(/news/x.svg)',
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        >
+                                            <div className='flex items-center gap-2 sm:gap-3'>
+                                                <div className='w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center backdrop-blur-sm bg-black/10'>
+                                                    <img src="/news/x-logo.svg" alt="X logo" className="w-5 h-5 sm:w-6 sm:h-6" />
+                                                </div>
+                                                <span className='font-medium font-poppins text-white text-sm sm:text-base'>X</span>
                                             </div>
-                                            <span className='font-medium font-poppins text-white text-sm sm:text-base'>X</span>
-                                        </div>
 
-                                        <div className='flex items-center gap-4 sm:gap-6'>
-                                            <span className='font-medium font-poppins text-white text-xs sm:text-sm'>Follow</span>
-                                            <span className=' font-poppins text-white text-xs sm:text-sm font-bold'>1.5k</span>
+                                            <div className='flex items-center gap-4 sm:gap-6'>
+                                                <span className='font-medium font-poppins text-white text-xs sm:text-sm'>Follow</span>
+                                                <span className=' font-poppins text-white text-xs sm:text-sm font-bold'>1.5k</span>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </AnimatedElement>
                                 {/* Youtube */}
                                 <AnimatedElement animation="fade" delay={1}>
-                                    <div
-                                        className='flex items-center justify-between p-3 sm:p-4 hover:bg-gray-50 rounded-lg cursor-pointer min-h-[70px]'
-                                        style={{
-                                            backgroundImage: 'url(/news/youtube.svg)',
-                                            backgroundSize: 'cover',
-                                            backgroundPosition: 'center',
-                                        }}
-                                    >
-                                        <div className='flex items-center gap-2 sm:gap-3'>
-                                            <div className='w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center backdrop-blur-sm bg-black/10'>
-                                                <img src="/news/YouTube_icon.svg" alt="Youtube logo" className="w-5 h-5 sm:w-6 sm:h-6" />
+                                    <Link href="https://www.youtube.com/@gnsbtp" target="_blank">
+                                        <div
+                                            className='flex items-center justify-between p-3 sm:p-4 hover:bg-gray-50 rounded-lg cursor-pointer min-h-[70px]'
+                                            style={{
+                                                backgroundImage: 'url(/news/youtube.svg)',
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        >
+                                            <div className='flex items-center gap-2 sm:gap-3'>
+                                                <div className='w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center backdrop-blur-sm bg-black/10'>
+                                                    <img src="/news/YouTube_icon.svg" alt="Youtube logo" className="w-5 h-5 sm:w-6 sm:h-6" />
+                                                </div>
+                                                <span className='font-medium font-poppins text-white text-sm sm:text-base'>Youtube</span>
                                             </div>
-                                            <span className='font-medium font-poppins text-white text-sm sm:text-base'>Youtube</span>
-                                        </div>
 
-                                        <div className='flex items-center gap-4 sm:gap-6'>
-                                            <span className='font-medium font-poppins text-white text-xs sm:text-sm'>Subscribe</span>
-                                            <span className=' font-poppins text-white text-xs sm:text-sm font-bold'>1k</span>
+                                            <div className='flex items-center gap-4 sm:gap-6'>
+                                                <span className='font-medium font-poppins text-white text-xs sm:text-sm'>Subscribe</span>
+                                                <span className=' font-poppins text-white text-xs sm:text-sm font-bold'>1k</span>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </AnimatedElement>
                             </div>
                         </div>

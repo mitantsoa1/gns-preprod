@@ -797,7 +797,113 @@
     "nextBilling": "Next Billing",
     "cancelSubscription": "Cancel Subscription",
     "changed": "Changed",
-    "purchaseDate": "Purchase Date",
-    "search": "Search"
-  }
+    "purchaseDate": "Purchase Date"
+  },
+  "downloadPdfPage": {
+    "title": "Documents to Download",
+    "description": "Find here all our brochures, certifications, and technical documents in PDF format.",
+    "download": "Download",
+    "updated": "Updated: {date}",
+    "documents": {
+      "brochure": {
+        "title": "GNS BTP Brochure",
+        "description": "Complete presentation of our services and expertise in structural work."
+      },
+      "catalog": {
+        "title": "Services Catalog",
+        "description": "Technical details and indicative rates for our interventions."
+      },
+      "certifications": {
+        "title": "Qualibat Certifications",
+        "description": "Our certificates and certifications guaranteeing the quality of our work."
+      },
+      "csr": {
+        "title": "CSR Charter",
+        "description": "Our commitments regarding social and environmental responsibility."
+      }
+    }
+  },
+  "faqPage": {
+    "title": "Frequently Asked Questions",
+    "description": "Do you have questions? We have the answers. Find here the most frequently asked questions from our clients.",
+    "items": {
+      "islandWide": {
+        "question": "Do you operate throughout Reunion Island?",
+        "answer": "Yes, GNS BTP operates throughout Reunion Island. Whether your project is located in the North, South, East, or West, our teams are mobile and equipped to travel to your site."
+      },
+      "quoteDelay": {
+        "question": "What is the average time to get a quote?",
+        "answer": "For standard projects, we commit to providing a detailed quote within 5 to 7 working days after the technical visit. For more complex projects requiring in-depth studies, the delay may vary between 10 and 15 days."
+      },
+      "warranty": {
+        "question": "Are your works covered by a ten-year guarantee?",
+        "answer": "Absolutely. In accordance with current legislation, all our structural work is covered by a ten-year warranty insurance. We systematically provide our insurance certificate before the start of the site."
+      },
+      "monitoring": {
+        "question": "How is the site monitoring carried out?",
+        "answer": "A dedicated site manager is appointed for each project. They are your privileged contact and ensure daily monitoring of the work. Weekly site meetings are organized to keep you informed of progress and validate key stages."
+      },
+      "turnkey": {
+        "question": "Do you offer turnkey constructions?",
+        "answer": "We specialize in structural work, but we work in close collaboration with a network of trusted partners (architects, finishing works) to support you on global projects if necessary."
+      },
+      "payment": {
+        "question": "What are the payment terms?",
+        "answer": "Generally, payment is made in installments according to the progress of the work: a deposit upon signature, then monthly work situations or by validated phase, and the balance upon receipt of the site."
+      }
+    }
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last update: {date}",
+    "sections": {
+      "intro": {
+        "title": "1. Introduction",
+        "content": "GNS BTP (\"we\", \"our\" or \"us\") is committed to protecting the privacy of users of our website. This privacy policy explains how we collect, use, disclose, and protect your personal information."
+      },
+      "collection": {
+        "title": "2. Information Collection",
+        "content": "We may collect the following types of information:",
+        "list": {
+          "item1": "<strong>Personal Identification Information:</strong> Name, email address, phone number, postal address, when you fill out our contact or quote request forms.",
+          "item2": "<strong>Technical Information:</strong> IP address, browser type, visited pages, time spent on the site, via cookies and similar technologies."
+        }
+      },
+      "usage": {
+        "title": "3. Information Usage",
+        "content": "We use your information to:",
+        "list": {
+          "item1": "Process your quote requests and contact you regarding your project.",
+          "item2": "Improve our website and services.",
+          "item3": "Send you administrative or promotional information (if you have consented).",
+          "item4": "Comply with our legal obligations."
+        }
+      },
+      "protection": {
+        "title": "4. Data Protection",
+        "content": "We implement appropriate technical and organizational security measures to protect your personal data against unauthorized access, modification, disclosure, or destruction."
+      },
+      "cookies": {
+        "title": "5. Cookies",
+        "content": "Our site uses cookies to improve your browsing experience. You can configure your browser to refuse all cookies or to warn you when a cookie is sent."
+      },
+      "rights": {
+        "title": "6. Your Rights",
+        "content": "In accordance with the GDPR, you have the following rights regarding your personal data:",
+        "list": {
+          "item1": "Right of access and rectification.",
+          "item2": "Right to erasure (\"right to be forgotten\").",
+          "item3": "Right to restriction of processing.",
+          "item4": "Right to data portability.",
+          "item5": "Right to object."
+        },
+        "contact": "To exercise these rights, please contact us at the following address: contact@gnsbtp.re"
+      },
+      "contact": {
+        "title": "7. Contact Us",
+        "content": "If you have any questions regarding this privacy policy, please do not hesitate to contact us."
+      }
+    }
+  },
+  "search": "Search"
 }

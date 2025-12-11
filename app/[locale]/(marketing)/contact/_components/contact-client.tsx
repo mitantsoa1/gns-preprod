@@ -38,7 +38,7 @@ const ContactClientPage = () => {
     }, [inView, controls]);
     return (
         <div className='min-h-screen bg-[#eee9ed] md:pb-20 pt-36'>
-            <section className='max-w-7xl sm:bg-[#ffeb11]  min-h-screen mx-auto ' >
+            <section className='max-w-7xl sm:bg-[#ffeb11]  min-h-screen mx-auto relative' >
                 <div className='max-w-7xl bg-[#ebefff]  px-6  md:h-[70%] mx-auto relative'>
                     <div className="fixed right-4 top-1/2">
                         <DownloadButton />
@@ -76,7 +76,7 @@ const ContactClientPage = () => {
 
                         {/* Partie droite - Formulaire */}
                         <div className='w-full sm:max-w-1/2 sm:pr-10'>
-                            <form action="" className='space-y-4'>
+                            <form action="" className='space-y-4 max-w-sm mx-auto sm:ml-auto'>
                                 <div>
                                     <Label className='text-black'>{t('form.name')}</Label>
                                     <Input className='w-full border border-gray-700 rounded-3xl p-2' />
@@ -96,10 +96,10 @@ const ContactClientPage = () => {
                     <div className='absolute left-3/12 bottom-0 max-[925px]:hidden'>
                         <Image src="/contact/2-lignes-center.svg" alt='ellipse' width={300} height={300} />
                     </div>
-                    <div className='absolute -bottom-4/12 left-2/12 max-[925px]:hidden'>
+                    <div className='absolute -bottom-5/12 left-2/12 max-[925px]:hidden'>
                         <Image src="/contact/Ellipse2.svg" alt='ellipse' width={300} height={300} />
                     </div>
-                    <div className='absolute -bottom-3/12 left-2/12 z-20 max-[925px]:hidden' >
+                    <div className='absolute -bottom-4/12 left-2/12 z-20 max-[925px]:hidden' >
                         <Image src="/contact/women.svg" alt='women' width={300} height={300} />
                     </div>
                 </div>
@@ -107,12 +107,12 @@ const ContactClientPage = () => {
                     style={{ clipPath: 'polygon(16% 28%, 54% 61%, 100% 100%, 25% 100%, 0 100%, 0 0)' }}>
                 </div>
 
-                <div className='hidden sm:inline-flex space-x-4 absolute -bottom-32 sm:-bottom-28  left-20 z-100'>
+                <div className='hidden sm:inline-flex space-x-4 max-w-xs  absolute bottom-0 left-0 z-10 p-6'>
                     <Link href={"https://www.facebook.com/gnsbtp"} target="_blank" className='hover:cursor-pointer'><Image src="/contact/fb.svg" alt='fb icon' width={20} height={20} className='hover:cursor-pointer' /></Link>
                     <Link href={"https://www.facebook.com/gnsbtp"} target="_blank" className='hover:cursor-pointer'><Image src="/contact/whatsapp.svg" alt='fb icon' width={20} height={20} className='hover:cursor-pointer' /></Link>
                     <Link href={"https://www.facebook.com/gnsbtp"} target="_blank" className='hover:cursor-pointer'><Image src="/contact/telegram.svg" alt='fb icon' width={20} height={20} className='hover:cursor-pointer' /></Link>
                 </div>
-                <div className='hidden sm:flex flex-col space-y-3 absolute -bottom-32  right-20 z-100'>
+                <div className='hidden sm:flex flex-col space-y-3 max-w-xs ml-auto absolute bottom-0 right-0 z-10 p-6'>
                     <h1 className='text-lg font-semibold'>{t('info.title')}</h1>
                     <p className='inline-flex space-x-4 text-sm'><Image className='mr-2' src="/contact/phone.svg" alt='phone icon' width={20} height={20} /> {t('info.phone')}</p>
                     <p className='inline-flex space-x-2 text-sm'><Image className='mr-2' src="/contact/mail.svg" alt='phone icon' width={20} height={20} /> {t('info.email')}</p>
@@ -124,7 +124,7 @@ const ContactClientPage = () => {
 
                         {/* Section réseaux sociaux */}
                         <div className='flex flex-col items-center'>
-                            <h2 className='text-sm font-medium text-gray-600 mb-3'>{t('social.follow')}</h2>
+                            {/* <h2 className='text-sm font-medium text-gray-600 mb-3'>{t('social.follow')}</h2> */}
                             <div className='flex justify-center gap-4'>
                                 <Link href="https://www.facebook.com/gnsbtp" target="_blank" className='hover:opacity-80 transition-opacity'>
                                     <Image src="/contact/fb.svg" alt='Facebook' width={24} height={24} />

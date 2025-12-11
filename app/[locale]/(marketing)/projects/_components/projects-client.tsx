@@ -5,10 +5,12 @@ import DownloadButton from '@/components/DownloadButton';
 import RealistationCard from '@/components/projects/RealistationCard'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
+import ButtonPrimary from '@/components/ButtonPrimary';
 
 const ProjectsClientPage = () => {
     const t = useTranslations('projects');
+    const locale = useLocale()
 
     const realisationsData = [
         {
@@ -117,7 +119,7 @@ const ProjectsClientPage = () => {
                 </div>
                 <div className="py-4 flex justify-center items-center">
                     <AnimatedElement animation="blur">
-                        <ButtonText className='text-sm font-semibold'>{t('cta.viewMore')}</ButtonText>
+                        <ButtonPrimary href={`/${locale}/projects`} className='text-sm font-semibold' text={t('cta.viewMore')} />
                     </AnimatedElement>
                 </div>
             </section>
@@ -161,10 +163,10 @@ const ProjectsClientPage = () => {
                 </div>
                 <div className="max-w-sm flex justify-center items-center mx-auto py-6 gap-2">
                     <AnimatedElement animation="fade" delay={0.5} duration={0.8}>
-                        <ButtonText className='text-sm font-semibold'>{t('cta.appointment')}</ButtonText>
+                        <ButtonPrimary className='text-sm font-semibold' href={`/${locale}/contact`} text={t('cta.appointment')} />
                     </AnimatedElement>
                     <AnimatedElement animation="fade" delay={0.7} duration={0.7}>
-                        <ButtonText variant="outline" className='text-sm font-semibold'>{t('cta.aboutUs')}</ButtonText>
+                        <ButtonPrimary variant='outline' className='text-sm font-semibold ' href={`/${locale}/about`} text={t('cta.aboutUs')} />
                     </AnimatedElement>
                 </div>
             </section>

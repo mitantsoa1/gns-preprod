@@ -3,11 +3,13 @@
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 export function Footer() {
   const t = useTranslations();
   const [isVisible, setIsVisible] = useState(false);
+  const locale = useLocale();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -64,21 +66,21 @@ export function Footer() {
                 }`}
               style={{ transitionDelay: '200ms' }}
             >
-              <a href="#" className="hover:opacity-70 transition-opacity">
+              <Link href="https://www.facebook.com/gnsbtp" className="hover:opacity-70 transition-opacity">
                 <Image src="/footer/facebook.svg" alt="Facebook" width={23} height={23} />
-              </a>
-              <a href="#" className="hover:opacity-70 transition-opacity">
+              </Link>
+              <Link href="https://www.instagram.com/gnsbtp/" className="hover:opacity-70 transition-opacity">
                 <Image src="/footer/insta.svg" alt="Instagram" width={24} height={24} />
-              </a>
-              <a href="#" className="hover:opacity-70 transition-opacity">
+              </Link>
+              <Link href="https://www.linkedin.com/company/gns-btp/" className="hover:opacity-70 transition-opacity">
                 <Image src="/footer/linkedin.svg" alt="LinkedIn" width={25} height={25} />
-              </a>
-              <a href="#" className="hover:opacity-70 transition-opacity">
+              </Link>
+              <Link href="https://twitter.com/gnsbtp" className="hover:opacity-70 transition-opacity">
                 <Image src="/footer/x.svg" alt="X (Twitter)" width={22} height={22} />
-              </a>
-              <a href="#" className="hover:opacity-70 transition-opacity">
+              </Link>
+              <Link href="https://wa.me/212652010000" className="hover:opacity-70 transition-opacity">
                 <Image src="/footer/whatsapp.svg" alt="WhatsApp" width={26} height={26} />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -90,12 +92,12 @@ export function Footer() {
           >
             <h3 className="font-bold text-xl mb-6">{t('footer.pages.title')}</h3>
             <ul className="space-y-3 flex flex-col items-center md:items-start">
-              <li><a href="#" className="hover:underline transition-all">{t('footer.pages.services')}</a></li>
-              <li><a href="#" className="hover:underline transition-all">{t('footer.pages.projects')}</a></li>
-              <li><a href="#" className="hover:underline transition-all">{t('footer.pages.news')}</a></li>
-              <li><a href="#" className="hover:underline transition-all">{t('footer.pages.pricing')}</a></li>
-              <li><a href="#" className="hover:underline transition-all">{t('footer.pages.about')}</a></li>
-              <li><a href="#" className="hover:underline transition-all">{t('footer.pages.contact')}</a></li>
+              <li><Link href={`/${locale}/services`} className="hover:underline transition-all">{t('footer.pages.services')}</Link></li>
+              <li><Link href={`/${locale}/projects`} className="hover:underline transition-all">{t('footer.pages.projects')}</Link></li>
+              <li><Link href={`/${locale}/news`} className="hover:underline transition-all">{t('footer.pages.news')}</Link></li>
+              <li><Link href={`/${locale}/pricing`} className="hover:underline transition-all">{t('footer.pages.pricing')}</Link></li>
+              <li><Link href={`/${locale}/about`} className="hover:underline transition-all">{t('footer.pages.about')}</Link></li>
+              <li><Link href={`/${locale}/contact`} className="hover:underline transition-all">{t('footer.pages.contact')}</Link></li>
             </ul>
           </div>
 
@@ -109,15 +111,15 @@ export function Footer() {
             <ul className="space-y-3 flex flex-col items-center md:items-start">
               <li className="flex items-center gap-2">
                 <Image src="/header/etoile.svg" alt="" width={21} height={21} />
-                <a href="#" className="hover:underline transition-all underline">{t('footer.utilityPages.downloadPdf')}</a>
+                <Link href={`/${locale}/download-pdf`} className="hover:underline transition-all underline">{t('footer.utilityPages.downloadPdf')}</Link>
               </li>
               <li className="flex items-center gap-2">
                 <Image src="/header/etoile.svg" alt="" width={21} height={21} />
-                <a href="#" className="hover:underline transition-all underline">{t('footer.utilityPages.faq')}</a>
+                <Link href={`/${locale}/faq`} className="hover:underline transition-all underline">{t('footer.utilityPages.faq')}</Link>
               </li>
               <li className="flex items-center gap-2">
                 <Image src="/header/etoile.svg" alt="" width={21} height={21} />
-                <a href="#" className="hover:underline transition-all underline">{t('footer.utilityPages.privacy')}</a>
+                <Link href={`/${locale}/privacy`} className="hover:underline transition-all underline">{t('footer.utilityPages.privacy')}</Link>
               </li>
             </ul>
           </div>
@@ -131,9 +133,9 @@ export function Footer() {
         >
           <p className="text-sm flex items-center justify-center gap-2">
             <span className="inline-flex items-center justify-center w-5 h-5 border border-black rounded-full text-xs">©</span>
-            <span className="font-semibold">2025</span>
+            <span className="font-semibold">{new Date().getFullYear()} </span>
             <span>{t('footer.copyright.by')}</span>
-            <a href="#" className="font-bold underline hover:opacity-70 transition-opacity">{t('footer.copyright.company')}</a>
+            <span className="font-bold underline hover:opacity-70 transition-opacity">{t('footer.copyright.company')}</span>
           </p>
         </div>
       </div>

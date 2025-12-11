@@ -9,6 +9,7 @@ import { TextEffect } from '@/components/motion-primitives/text-effect';
 import RepeatableAnimatedText from '@/components/animations/RepeatableAnimatedText';
 import RepeatableTextRoll from '@/components/animations/RepeatableTextRoll';
 import { useLocale, useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 export default function ServicesClientPage() {
     const t = useTranslations('services');
@@ -22,6 +23,7 @@ export default function ServicesClientPage() {
         }
     };
     const locale = useLocale()
+    const title = locale === 'fr' ? 'NOTRE DIFFERENCE' : 'OUR DIFFERENCE'
     return (
         <div className="min-h-screen bg-[#eee9ed] pt-20">
             {/* Hero Section */}
@@ -44,7 +46,7 @@ export default function ServicesClientPage() {
                                         {t('description')}
                                     </p>
 
-                                    <ButtonPrimary className='sm:w-auto' text={t('cta')} />
+                                    <ButtonPrimary href={`/${locale}/contact`} className='sm:w-auto' text={t('cta')} />
                                 </AnimatedElement>
                             </div>
                         </div>
@@ -171,7 +173,7 @@ export default function ServicesClientPage() {
                             </h2>
                             <h2 className="block sm:hidden text-[clamp(2rem,5vw,5rem)] font-bold text-gray-900 leading-[1.3] mb-2" style={{ fontStretch: 'condensed' }}>
                                 <RepeatableTextRoll >
-                                    NOTRE DIFFERENCE
+                                    {title}
                                 </RepeatableTextRoll>
                             </h2>
                             <AnimatedElement animation="fade">
@@ -235,11 +237,15 @@ export default function ServicesClientPage() {
                     </div>
                     <AnimatedElement animation="blur">
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 relative mx-auto py-2">
-                            <Button className='bg-black text-gray-100 border hover:bg-black/80 border-gray-800 rounded-sm px-4 py-2 whitespace-nowrap'>
-                                {t('difference.viewProjects')}
+                            <Button asChild className='bg-black text-gray-100 border hover:bg-black/80 border-gray-800 rounded-sm px-4 py-2 whitespace-nowrap'>
+                                <Link href={`/${locale}/projects`}>
+                                    {t('difference.viewProjects')}
+                                </Link>
                             </Button>
-                            <Button className='bg-transparent text-gray-800 border hover:bg-gray-300 border-gray-800 rounded-sm px-4 py-2 whitespace-nowrap'>
-                                {t('difference.aboutUs')}
+                            <Button asChild className='bg-transparent text-gray-800 border hover:bg-gray-300 border-gray-800 rounded-sm px-4 py-2 whitespace-nowrap'>
+                                <Link href={`/${locale}/about`}>
+                                    {t('difference.aboutUs')}
+                                </Link>
                             </Button>
                         </div>
                     </AnimatedElement>

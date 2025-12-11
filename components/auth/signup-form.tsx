@@ -51,6 +51,16 @@ export default function SignupForm() {
   return (
     <Card className="z-50 rounded-md rounded-t-none max-w-md">
       <CardHeader>
+        <div className="w-full flex items-center justify-center" >
+          <Link href={"/"} className="cursor-p">
+            <Image
+              src="/GNS.png"
+              alt="Logo"
+              width={100}
+              height={100}
+            />
+          </Link>
+        </div>
         <CardTitle className="text-lg md:text-xl">Sign Up</CardTitle>
         <CardDescription className="text-xs md:text-sm">
           Enter your information to create an account

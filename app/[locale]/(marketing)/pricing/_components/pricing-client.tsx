@@ -14,6 +14,7 @@ import Link from 'next/link'
 import { useProductStore } from '@/store/product-store'
 import { Product } from '@/lib/generated/prisma/client'
 import { FaqData } from '@/types'
+import ButtonPrimary from '@/components/ButtonPrimary'
 
 const PricingContent = ({ products }: { products: Product[] }) => {
     const locale = useLocale()
@@ -451,7 +452,7 @@ const PricingContent = ({ products }: { products: Product[] }) => {
                 </div>
                 <div className="flex justify-center">
                     <AnimatedElement animation='blur'>
-                        <ButtonText className='text-sm font-semibold '>{t('cta.appointment')}</ButtonText>
+                        <ButtonPrimary className='text-sm font-semibold ' href={`/${locale}/contact`} text={t('cta.appointment')} />
                     </AnimatedElement>
                 </div>
             </section>
