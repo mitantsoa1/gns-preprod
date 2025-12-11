@@ -14,7 +14,7 @@ import { Plus } from "lucide-react";
 import { quotesData } from "@/lib/dashboard/mock-data";
 import { useTranslations } from "next-intl";
 
-export function QuotesSection() {
+export function QuotesSection({ quotes }: { quotes: any[] }) {
     const t = useTranslations("dashboard.quotes");
 
     const getStatusColor = (status: string) => {
@@ -49,7 +49,13 @@ export function QuotesSection() {
                         </TableRow>
                     </TableHeader>
                     <TableBody>
-                        {quotesData.map((quote) => (
+                        {quotes.length === 0 ? (
+                            <TableRow>
+                                <TableCell colSpan={4} className="text-center text-muted-foreground">
+                                    Aucun devis en attente
+                                </TableCell>
+                            </TableRow>
+                        ) : quotes.map((quote) => (
                             <TableRow key={quote.id}>
                                 <TableCell className="font-medium">{quote.id}</TableCell>
                                 <TableCell>{quote.client}</TableCell>

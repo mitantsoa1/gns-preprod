@@ -160,6 +160,8 @@ export const PaymentScalarFieldEnum = {
   currency: 'currency',
   status: 'status',
   paymentMethod: 'paymentMethod',
+  amountCaptured: 'amountCaptured',
+  amountRefunded: 'amountRefunded',
   userId: 'userId',
   customerEmail: 'customerEmail',
   customerName: 'customerName',
@@ -169,12 +171,17 @@ export const PaymentScalarFieldEnum = {
   description: 'description',
   receiptUrl: 'receiptUrl',
   invoiceUrl: 'invoiceUrl',
+  invoiceId: 'invoiceId',
+  failureCode: 'failureCode',
   failureReason: 'failureReason',
   metadata: 'metadata',
+  disputed: 'disputed',
+  disputeReason: 'disputeReason',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt',
   paidAt: 'paidAt',
-  refundedAt: 'refundedAt'
+  refundedAt: 'refundedAt',
+  capturedAt: 'capturedAt'
 } as const
 
 export type PaymentScalarFieldEnum = (typeof PaymentScalarFieldEnum)[keyof typeof PaymentScalarFieldEnum]

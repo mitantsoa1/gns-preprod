@@ -103,10 +103,12 @@ model Payment {
   stripeChargeId          String?
 
   // Payment details
-  amount        Float // Amount in smallest currency unit (e.g., cents)
-  currency      String  @default("eur")
-  status        String // pending, succeeded, failed, refunded, canceled
-  paymentMethod String? // card, sepa_debit, etc.
+  amount         Float // Amount in smallest currency unit (e.g., cents)
+  currency       String  @default("eur")
+  status         String // pending, succeeded, failed, refunded, canceled
+  paymentMethod  String? // card, sepa_debit, etc.
+  amountCaptured Float? // Montant capturé (utile pour les captures différées)
+  amountRefunded Float? // Montant remboursé (pour remboursements partiels)
 
   // Customer information
   userId        String?
@@ -122,23 +124,32 @@ model Payment {
 
   // Additional details
   description   String?
-  receiptUrl    String?
-  invoiceUrl    String?
-  failureReason String?
-
+  receiptUrl    String? // URL du reçu Stripe
+  invoiceUrl    String? // URL de la facture Stripe
+  invoiceId     String? // ID de la facture Stripe (pour les abonnements)
+  failureCode   String? // Code d'erreur Stripe
+  failureReason String? // Message d'erreur
   // Metadata (JSON for custom data)
-  metadata Json?
+  metadata      Json?
+
+  // Dispute/Chargeback
+  disputed      Boolean @default(false) // Si le paiement est contesté
+  disputeReason String? // Raison de la contestation
 
   // Timestamps
   createdAt  DateTime  @default(now())
   updatedAt  DateTime  @updatedAt
   paidAt     DateTime?
   refundedAt DateTime?
+  capturedAt DateTime? // Quand le paiement a été capturé
 
   @@index([userId])
   @@index([productId])
   @@index([status])
   @@index([stripePaymentIntentId])
   @@index([stripeCheckoutSessionId])
+  @@index([stripeChargeId])
+  @@index([customerEmail])
+  @@index([createdAt])
   @@map("payment")
 }

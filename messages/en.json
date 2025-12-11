@@ -666,7 +666,10 @@
       "activeProjects": "Active Projects",
       "pendingQuotes": "Pending Quotes",
       "completedSites": "Delivered Sites",
-      "clientSatisfaction": "Average Rating"
+      "clientSatisfaction": "Average Rating",
+      "totalRevenue": "Total Revenue",
+      "completedPayments": "Completed Payments",
+      "averageCart": "Average Cart"
     },
     "projects": {
       "title": "Recent Projects",

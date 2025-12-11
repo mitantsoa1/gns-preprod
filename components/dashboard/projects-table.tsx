@@ -14,7 +14,7 @@ import { ArrowUpRight } from "lucide-react";
 import { projectsData } from "@/lib/dashboard/mock-data";
 import { useTranslations } from "next-intl";
 
-export function ProjectsTable() {
+export function ProjectsTable({ projects }: { projects: any[] }) {
     const t = useTranslations("dashboard.projects");
 
     const getStatusColor = (status: string) => {
@@ -50,7 +50,13 @@ export function ProjectsTable() {
                         </TableRow>
                     </TableHeader>
                     <TableBody>
-                        {projectsData.map((project) => (
+                        {projects.length === 0 ? (
+                            <TableRow>
+                                <TableCell colSpan={5} className="text-center text-muted-foreground">
+                                    Aucun projet en cours
+                                </TableCell>
+                            </TableRow>
+                        ) : projects.map((project) => (
                             <TableRow key={project.id}>
                                 <TableCell className="font-medium">{project.name}</TableCell>
                                 <TableCell>{project.client}</TableCell>

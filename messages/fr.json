@@ -666,7 +666,10 @@
       "activeProjects": "Projets en cours",
       "pendingQuotes": "Devis en attente",
       "completedSites": "Chantiers livrés",
-      "clientSatisfaction": "Note moyenne"
+      "clientSatisfaction": "Note moyenne",
+      "totalRevenue": "Total Revenus",
+      "completedPayments": "Paiements Validés",
+      "averageCart": "Panier Moyen"
     },
     "projects": {
       "title": "Projets Récents",

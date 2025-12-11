@@ -1,14 +1,13 @@
-
-"use client";
-
+import { DashboardStats } from "@/components/dashboard/dashboard-stats";
 import AppLayout from "@/components/layouts/app-layout";
 import { BreadcrumbItem } from "@/types/sidebar";
 import { useTranslations } from "next-intl";
-import { DashboardStats } from "@/components/dashboard/dashboard-stats";
-import { ProjectsTable } from "@/components/dashboard/projects-table";
-import { QuotesSection } from "@/components/dashboard/quotes-section";
-import { ActivityTimeline } from "@/components/dashboard/activity-timeline";
-import { QuickActions } from "@/components/dashboard/quick-actions";
+// import { DashboardStats } from "@/components/dashboard/dashboard-stats";
+// import { PaymentsTable } from "@/components/dashboard/payments-table";
+// import { QuotesSection } from "@/components/dashboard/quotes-section";
+// import { ActivityTimeline } from "@/components/dashboard/activity-timeline";
+// import { QuickActions } from "@/components/dashboard/quick-actions";
+// import { getUserDashboardData } from "@/actions/dashboard-actions";
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -17,8 +16,9 @@ const breadcrumbs: BreadcrumbItem[] = [
     }
 ];
 
-export default function DashboardPage() {
+export default function DashboardPage({ dashboardData }: { dashboardData: any }) {
     const t = useTranslations("dashboard");
+
 
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
@@ -32,14 +32,14 @@ export default function DashboardPage() {
                     </div>
                 </div>
 
-                <DashboardStats />
+                <DashboardStats stats={dashboardData.stats} />
 
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-7">
+                {/* <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-7">
                     <div className="lg:col-span-4">
-                        <ProjectsTable />
+                        <PaymentsTable payments={dashboardData.payments} />
                     </div>
                     <div className="lg:col-span-3">
-                        <QuotesSection />
+                        <QuotesSection quotes={dashboardData.quotes} />
                     </div>
                 </div>
 
@@ -50,9 +50,9 @@ export default function DashboardPage() {
                         </div>
                     </div>
                     <div className="lg:col-span-3">
-                        <ActivityTimeline />
-                    </div>
-                </div>
+                        <ActivityTimeline activities={dashboardData.activities} />
+                    </div> 
+                </div>*/}
             </div>
         </AppLayout>
     );
