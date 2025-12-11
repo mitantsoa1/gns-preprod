@@ -123,10 +123,10 @@ export function HeroSection() {
                   }`}
                 style={{ transitionDelay: '400ms' }}
               >
-                <span className="text-[clamp(2rem,6vw,7rem)] sm:text-[clamp(2rem,6vw,7rem)] text-gray-900 whitespace-nowrap" style={{ fontStretch: 'condensed' }}>
+                <span className="text-[clamp(1.8rem,5vw,7rem)] text-gray-900 whitespace-nowrap" style={{ fontStretch: 'condensed' }}>
                   {t('hero.grosOeuvre')}
                 </span>
-                <span className="hidden sm:block relative w-[clamp(120px,30vw,300px)] sm:w-[clamp(150px,23vw,300px)] md:w-[clamp(180px,20vw,300px)] h-[clamp(1.5rem,4vw,5rem)] sm:h-[clamp(1.6rem,4.5vw,5rem)] md:h-[clamp(1.8rem,4.5vw,5rem)] flex-shrink-0">
+                <span className="hidden sm:block relative w-[clamp(100px,25vw,300px)] sm:w-[clamp(120px,20vw,300px)] md:w-[clamp(140px,20vw,300px)] h-[clamp(1.4rem,4vw,5rem)] sm:h-[clamp(1.6rem,4.3vw,5rem)] md:h-[clamp(1.8rem,4.3vw,5rem)] flex-shrink-0">
                   <Image
                     src="/hero/batir.png"
                     alt="Building construction"
@@ -134,7 +134,7 @@ export function HeroSection() {
                     className="object-cover rounded-md sm:rounded-lg"
                   />
                 </span>
-                <span className="text-[clamp(2rem,6vw,7rem)] sm:text-[clamp(2rem,6vw,7rem)] text-gray-900" style={{ fontStretch: 'condensed' }}>
+                <span className="text-[clamp(1.8rem,5vw,7rem)] text-gray-900" style={{ fontStretch: 'condensed' }}>
                   {t('hero.batir')}
                 </span>
               </span>

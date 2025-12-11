@@ -14,7 +14,7 @@ export function DashboardStats({ stats }: { stats: any }) {
         {
             title: t("totalRevenue"),
             value: stats.totalRevenue,
-            change: "+12%",
+            // change: "+12%",
             changeType: "positive",
             icon: TrendingUp,
             suffix: ""
@@ -22,7 +22,7 @@ export function DashboardStats({ stats }: { stats: any }) {
         {
             title: t("pendingQuotes"),
             value: stats.pendingQuotes,
-            change: "+2",
+            // change: "+2",
             changeType: "neutral",
             icon: FileText,
             suffix: ""
@@ -30,7 +30,7 @@ export function DashboardStats({ stats }: { stats: any }) {
         {
             title: t("completedPayments"),
             value: stats.completedPayments,
-            change: "+5",
+            // change: "+5",
             changeType: "positive",
             icon: CheckCircle2,
             suffix: ""
@@ -38,7 +38,7 @@ export function DashboardStats({ stats }: { stats: any }) {
         {
             title: t("averageCart"),
             value: stats.averagePayment,
-            change: "+4%",
+            // change: "+4%",
             changeType: "positive",
             icon: CreditCard,
             suffix: ""
@@ -61,9 +61,9 @@ export function DashboardStats({ stats }: { stats: any }) {
                         </CardHeader>
                         <CardContent>
                             <div className="text-2xl font-bold">{stat.value}{stat.suffix}</div>
-                            <p className="text-xs text-muted-foreground">
+                            {/* <p className="text-xs text-muted-foreground">
                                 <span className={`${trendColor} font-medium`}>{stat.change}</span> {t("change")}
-                            </p>
+                            </p> */}
                         </CardContent>
                     </Card>
                 );
