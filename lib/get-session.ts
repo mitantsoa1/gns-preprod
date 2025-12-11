@@ -1,5 +1,6 @@
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
+import { authClient } from "./auth-client";
 
 /**
  * Récupère la session utilisateur côté serveur
@@ -21,4 +22,9 @@ export async function getSession() {
 export const getUser = async () => {
     const session = await getSession()
     return session?.user
+}
+
+export function getClientSession() {
+    const session = authClient.useSession()
+    return session
 }
