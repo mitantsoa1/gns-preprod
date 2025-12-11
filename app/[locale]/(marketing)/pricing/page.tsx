@@ -1,6 +1,6 @@
 import prisma from '@/lib/prisma';
 import PricingContent from './_components/pricing-client';
-import { Product } from '@/lib/generated/prisma/client';
+import { Product, Service } from '@/lib/generated/prisma/client';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -19,7 +19,9 @@ const PricingPage = async ({ params }: { params: Promise<{ locale: string }> }) 
         description: (locale === 'fr' && p.descriptionFr) ? p.descriptionFr : p.description,
     }));
 
-    return <PricingContent products={products} />;
+    const services = await prisma.service.findMany();
+
+    return <PricingContent products={products} services={services} />;
 };
 
 export default PricingPage;

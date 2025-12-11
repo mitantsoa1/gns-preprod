@@ -28,10 +28,12 @@ export type AggregateProduct = {
 
 export type ProductAvgAggregateOutputType = {
   price: number | null
+  serviceIds: number | null
 }
 
 export type ProductSumAggregateOutputType = {
   price: number | null
+  serviceIds: number[]
 }
 
 export type ProductMinAggregateOutputType = {
@@ -74,16 +76,19 @@ export type ProductCountAggregateOutputType = {
   isPopular: number
   createdAt: number
   updatedAt: number
+  serviceIds: number
   _all: number
 }
 
 
 export type ProductAvgAggregateInputType = {
   price?: true
+  serviceIds?: true
 }
 
 export type ProductSumAggregateInputType = {
   price?: true
+  serviceIds?: true
 }
 
 export type ProductMinAggregateInputType = {
@@ -126,6 +131,7 @@ export type ProductCountAggregateInputType = {
   isPopular?: true
   createdAt?: true
   updatedAt?: true
+  serviceIds?: true
   _all?: true
 }
 
@@ -227,6 +233,7 @@ export type ProductGroupByOutputType = {
   isPopular: boolean
   createdAt: Date
   updatedAt: Date | null
+  serviceIds: number[]
   _count: ProductCountAggregateOutputType | null
   _avg: ProductAvgAggregateOutputType | null
   _sum: ProductSumAggregateOutputType | null
@@ -264,6 +271,7 @@ export type ProductWhereInput = {
   isPopular?: Prisma.BoolFilter<"Product"> | boolean
   createdAt?: Prisma.DateTimeFilter<"Product"> | Date | string
   updatedAt?: Prisma.DateTimeNullableFilter<"Product"> | Date | string | null
+  serviceIds?: Prisma.IntNullableListFilter<"Product">
   payments?: Prisma.PaymentListRelationFilter
 }
 
@@ -279,6 +287,7 @@ export type ProductOrderByWithRelationInput = {
   isPopular?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrderInput | Prisma.SortOrder
+  serviceIds?: Prisma.SortOrder
   payments?: Prisma.PaymentOrderByRelationAggregateInput
 }
 
@@ -297,6 +306,7 @@ export type ProductWhereUniqueInput = Prisma.AtLeast<{
   isPopular?: Prisma.BoolFilter<"Product"> | boolean
   createdAt?: Prisma.DateTimeFilter<"Product"> | Date | string
   updatedAt?: Prisma.DateTimeNullableFilter<"Product"> | Date | string | null
+  serviceIds?: Prisma.IntNullableListFilter<"Product">
   payments?: Prisma.PaymentListRelationFilter
 }, "id">
 
@@ -312,6 +322,7 @@ export type ProductOrderByWithAggregationInput = {
   isPopular?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrderInput | Prisma.SortOrder
+  serviceIds?: Prisma.SortOrder
   _count?: Prisma.ProductCountOrderByAggregateInput
   _avg?: Prisma.ProductAvgOrderByAggregateInput
   _max?: Prisma.ProductMaxOrderByAggregateInput
@@ -334,6 +345,7 @@ export type ProductScalarWhereWithAggregatesInput = {
   isPopular?: Prisma.BoolWithAggregatesFilter<"Product"> | boolean
   createdAt?: Prisma.DateTimeWithAggregatesFilter<"Product"> | Date | string
   updatedAt?: Prisma.DateTimeNullableWithAggregatesFilter<"Product"> | Date | string | null
+  serviceIds?: Prisma.IntNullableListFilter<"Product">
 }
 
 export type ProductCreateInput = {
@@ -348,6 +360,7 @@ export type ProductCreateInput = {
   isPopular?: boolean
   createdAt?: Date | string
   updatedAt?: Date | string | null
+  serviceIds?: Prisma.ProductCreateserviceIdsInput | number[]
   payments?: Prisma.PaymentCreateNestedManyWithoutProductInput
 }
 
@@ -363,6 +376,7 @@ export type ProductUncheckedCreateInput = {
   isPopular?: boolean
   createdAt?: Date | string
   updatedAt?: Date | string | null
+  serviceIds?: Prisma.ProductCreateserviceIdsInput | number[]
   payments?: Prisma.PaymentUncheckedCreateNestedManyWithoutProductInput
 }
 
@@ -378,6 +392,7 @@ export type ProductUpdateInput = {
   isPopular?: Prisma.BoolFieldUpdateOperationsInput | boolean
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+  serviceIds?: Prisma.ProductUpdateserviceIdsInput | number[]
   payments?: Prisma.PaymentUpdateManyWithoutProductNestedInput
 }
 
@@ -393,6 +408,7 @@ export type ProductUncheckedUpdateInput = {
   isPopular?: Prisma.BoolFieldUpdateOperationsInput | boolean
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+  serviceIds?: Prisma.ProductUpdateserviceIdsInput | number[]
   payments?: Prisma.PaymentUncheckedUpdateManyWithoutProductNestedInput
 }
 
@@ -408,6 +424,7 @@ export type ProductCreateManyInput = {
   isPopular?: boolean
   createdAt?: Date | string
   updatedAt?: Date | string | null
+  serviceIds?: Prisma.ProductCreateserviceIdsInput | number[]
 }
 
 export type ProductUpdateManyMutationInput = {
@@ -422,6 +439,7 @@ export type ProductUpdateManyMutationInput = {
   isPopular?: Prisma.BoolFieldUpdateOperationsInput | boolean
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+  serviceIds?: Prisma.ProductUpdateserviceIdsInput | number[]
 }
 
 export type ProductUncheckedUpdateManyInput = {
@@ -436,6 +454,15 @@ export type ProductUncheckedUpdateManyInput = {
   isPopular?: Prisma.BoolFieldUpdateOperationsInput | boolean
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+  serviceIds?: Prisma.ProductUpdateserviceIdsInput | number[]
+}
+
+export type IntNullableListFilter<$PrismaModel = never> = {
+  equals?: number[] | Prisma.ListIntFieldRefInput<$PrismaModel> | null
+  has?: number | Prisma.IntFieldRefInput<$PrismaModel> | null
+  hasEvery?: number[] | Prisma.ListIntFieldRefInput<$PrismaModel>
+  hasSome?: number[] | Prisma.ListIntFieldRefInput<$PrismaModel>
+  isEmpty?: boolean
 }
 
 export type ProductCountOrderByAggregateInput = {
@@ -450,10 +477,12 @@ export type ProductCountOrderByAggregateInput = {
   isPopular?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
+  serviceIds?: Prisma.SortOrder
 }
 
 export type ProductAvgOrderByAggregateInput = {
   price?: Prisma.SortOrder
+  serviceIds?: Prisma.SortOrder
 }
 
 export type ProductMaxOrderByAggregateInput = {
@@ -486,11 +515,16 @@ export type ProductMinOrderByAggregateInput = {
 
 export type ProductSumOrderByAggregateInput = {
   price?: Prisma.SortOrder
+  serviceIds?: Prisma.SortOrder
 }
 
 export type ProductNullableScalarRelationFilter = {
   is?: Prisma.ProductWhereInput | null
   isNot?: Prisma.ProductWhereInput | null
+}
+
+export type ProductCreateserviceIdsInput = {
+  set: number[]
 }
 
 export type FloatFieldUpdateOperationsInput = {
@@ -499,6 +533,11 @@ export type FloatFieldUpdateOperationsInput = {
   decrement?: number
   multiply?: number
   divide?: number
+}
+
+export type ProductUpdateserviceIdsInput = {
+  set?: number[]
+  push?: number | number[]
 }
 
 export type ProductCreateNestedOneWithoutPaymentsInput = {
@@ -529,6 +568,7 @@ export type ProductCreateWithoutPaymentsInput = {
   isPopular?: boolean
   createdAt?: Date | string
   updatedAt?: Date | string | null
+  serviceIds?: Prisma.ProductCreateserviceIdsInput | number[]
 }
 
 export type ProductUncheckedCreateWithoutPaymentsInput = {
@@ -543,6 +583,7 @@ export type ProductUncheckedCreateWithoutPaymentsInput = {
   isPopular?: boolean
   createdAt?: Date | string
   updatedAt?: Date | string | null
+  serviceIds?: Prisma.ProductCreateserviceIdsInput | number[]
 }
 
 export type ProductCreateOrConnectWithoutPaymentsInput = {
@@ -573,6 +614,7 @@ export type ProductUpdateWithoutPaymentsInput = {
   isPopular?: Prisma.BoolFieldUpdateOperationsInput | boolean
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+  serviceIds?: Prisma.ProductUpdateserviceIdsInput | number[]
 }
 
 export type ProductUncheckedUpdateWithoutPaymentsInput = {
@@ -587,6 +629,7 @@ export type ProductUncheckedUpdateWithoutPaymentsInput = {
   isPopular?: Prisma.BoolFieldUpdateOperationsInput | boolean
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+  serviceIds?: Prisma.ProductUpdateserviceIdsInput | number[]
 }
 
 
@@ -632,6 +675,7 @@ export type ProductSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs 
   isPopular?: boolean
   createdAt?: boolean
   updatedAt?: boolean
+  serviceIds?: boolean
   payments?: boolean | Prisma.Product$paymentsArgs<ExtArgs>
   _count?: boolean | Prisma.ProductCountOutputTypeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["product"]>
@@ -648,6 +692,7 @@ export type ProductSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Exten
   isPopular?: boolean
   createdAt?: boolean
   updatedAt?: boolean
+  serviceIds?: boolean
 }, ExtArgs["result"]["product"]>
 
 export type ProductSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
@@ -662,6 +707,7 @@ export type ProductSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Exten
   isPopular?: boolean
   createdAt?: boolean
   updatedAt?: boolean
+  serviceIds?: boolean
 }, ExtArgs["result"]["product"]>
 
 export type ProductSelectScalar = {
@@ -676,9 +722,10 @@ export type ProductSelectScalar = {
   isPopular?: boolean
   createdAt?: boolean
   updatedAt?: boolean
+  serviceIds?: boolean
 }
 
-export type ProductOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "name" | "nameFr" | "description" | "descriptionFr" | "delay" | "price" | "unit" | "isPopular" | "createdAt" | "updatedAt", ExtArgs["result"]["product"]>
+export type ProductOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "name" | "nameFr" | "description" | "descriptionFr" | "delay" | "price" | "unit" | "isPopular" | "createdAt" | "updatedAt" | "serviceIds", ExtArgs["result"]["product"]>
 export type ProductInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   payments?: boolean | Prisma.Product$paymentsArgs<ExtArgs>
   _count?: boolean | Prisma.ProductCountOutputTypeDefaultArgs<ExtArgs>
@@ -703,6 +750,7 @@ export type $ProductPayload<ExtArgs extends runtime.Types.Extensions.InternalArg
     isPopular: boolean
     createdAt: Date
     updatedAt: Date | null
+    serviceIds: number[]
   }, ExtArgs["result"]["product"]>
   composites: {}
 }
@@ -1138,6 +1186,7 @@ export interface ProductFieldRefs {
   readonly isPopular: Prisma.FieldRef<"Product", 'Boolean'>
   readonly createdAt: Prisma.FieldRef<"Product", 'DateTime'>
   readonly updatedAt: Prisma.FieldRef<"Product", 'DateTime'>
+  readonly serviceIds: Prisma.FieldRef<"Product", 'Int[]'>
 }
     
 
