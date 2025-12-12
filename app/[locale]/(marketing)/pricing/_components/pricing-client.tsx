@@ -185,6 +185,10 @@ const PricingContent = ({ products, services }: PricingContentProps) => {
                 </div>
             </section>
 
+            <section className="mt-16 pb-16">
+                <ComparisonTable products={products} services={services} />
+            </section>
+
             <section className="pb-4 w-full bg-jaune mt-16">
                 <motion.div
                     initial={{ y: -100, opacity: 0, rotate: -30 }}
@@ -216,10 +220,6 @@ const PricingContent = ({ products, services }: PricingContentProps) => {
                         <ButtonPrimary className='text-sm font-semibold ' href={`/${locale}/contact`} text={t('cta.appointment')} />
                     </AnimatedElement>
                 </div>
-            </section>
-
-            <section className="mt-16 pb-16">
-                <ComparisonTable products={products} services={services} />
             </section>
 
             <section className="mt-16 pb-16">

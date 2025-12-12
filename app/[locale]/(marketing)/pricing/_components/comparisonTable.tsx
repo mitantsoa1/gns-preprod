@@ -2,35 +2,45 @@
 'use client';
 
 import { Product, Service } from '@/lib/generated/prisma/client';
+import { Minus } from 'lucide-react';
+import { useLocale } from 'next-intl';
 
 interface ComparisonTableProps {
     products: Product[];
     services: Service[];
+    customQuoteLabel?: string;
+    showCustomQuoteColumn?: boolean;
 }
 
-export default function ComparisonTable({ products, services }: ComparisonTableProps) {
+export default function ComparisonTable({
+    products,
+    services,
+    customQuoteLabel = "Devis personnalisé",
+    showCustomQuoteColumn = true
+}: ComparisonTableProps) {
+    const locale = useLocale()
     return (
-        <div className="w-full">
+        <div className="max-w-7xl mx-auto">
             {/* En-tête du tableau */}
             <div className="overflow-x-auto">
-                <table className="w-full min-w-max">
+                <table className="w-full min-w-max ">
                     <thead>
-                        <tr className="bg-gray-50">
+                        <tr className="bg-transparent">
                             {/* Première colonne vide en haut à gauche */}
-                            <th className="p-4 border"></th>
+                            <th className="p-4 "></th>
 
                             {/* En-tête : Nom des produits */}
                             {products.map(product => (
-                                <th key={product.id} className="p-4 border text-center min-w-[200px]">
+                                <th key={product.id} className="p-4  text-center min-w-[200px]">
                                     <div className="space-y-2">
-                                        {product.isPopular && (
+                                        {/* {product.isPopular && (
                                             <div className="inline-block px-2 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded-full">
                                                 ★ Populaire
                                             </div>
-                                        )}
+                                        )} */}
 
                                         <div className="font-bold text-lg">
-                                            {product.nameFr || product.name}
+                                            {locale === 'fr' ? product.nameFr : product.name}
                                         </div>
 
                                         <div className="text-2xl font-bold text-blue-600">
@@ -40,76 +50,85 @@ export default function ComparisonTable({ products, services }: ComparisonTableP
                                             )}
                                         </div>
 
-                                        {product.delay && (
+                                        {/* {product.delay && (
                                             <div className="text-sm text-gray-500">
                                                 Délai: {product.delay}
                                             </div>
-                                        )}
+                                        )} */}
                                     </div>
                                 </th>
                             ))}
+
+                            {/* Colonne Devis personnalisé */}
+                            {showCustomQuoteColumn && (
+                                <th className="p-4  text-center min-w-[200px] ">
+                                    <div className="space-y-2">
+                                        <div className="font-bold text-lg ">
+                                            {locale === 'fr' ? 'Devis personnalisé' : 'Custom Quote'}
+                                        </div>
+                                        <div className="text-sm text-gray-500">
+                                            {locale === 'fr' ? 'Personnalisé selon vos besoins' : 'Customized according to your needs'}
+                                        </div>
+                                    </div>
+                                </th>
+                            )}
                         </tr>
                     </thead>
 
                     <tbody>
                         {/* Chaque ligne = un service */}
                         {services.map((service, index) => (
-                            <tr key={service.id} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                            // <tr key={service.id} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                            <tr key={service.id} className='bg-transparent'>
                                 {/* Nom du service dans la première colonne */}
-                                <td className="p-4 border font-medium">
+                                <td className={`p-4 font-medium bg-white ${index === 0 ? 'rounded-tl-2xl' :
+                                    index === services.length - 1 ? 'rounded-bl-2xl' : ''}`}>
                                     {service.nameFr || service.name}
                                 </td>
 
                                 {/* Cases pour chaque produit */}
-                                {products.map(product => {
+                                {products.map((product, productIndex) => {
                                     const isIncluded = product.serviceIds.includes(service.id);
                                     return (
-                                        <td key={`${service.id}-${product.id}`} className="p-4 border text-center">
+                                        <td
+                                            key={`${service.id}-${product.id}`}
+                                            className={`p-4 text-center ml-2 bg-white `}
+                                        >
                                             {isIncluded ? (
                                                 <div className="flex justify-center">
-                                                    <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-                                                        <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <div className="w-8 h-8 bg-jaune rounded-full flex items-center justify-center">
+                                                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
                                                         </svg>
                                                     </div>
                                                 </div>
                                             ) : (
                                                 <div className="flex justify-center">
-                                                    <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
-                                                        <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12" />
-                                                        </svg>
-                                                    </div>
+                                                    <Minus className="w-6 h-6 text-gray-600" />
                                                 </div>
                                             )}
                                         </td>
                                     );
                                 })}
+
+                                {/* Colonne Devis personnalisé - TOUJOURS ✓ */}
+                                {showCustomQuoteColumn && (
+                                    <td className={`p-4  text-center bg-white ${index === 0 ? 'rounded-tr-2xl' :
+                                        index === services.length - 1 ? 'rounded-br-2xl' : ''}`}>
+                                        <div className="flex justify-center">
+                                            <div className="w-8 h-8 bg-jaune rounded-full flex items-center justify-center">
+                                                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                )}
                             </tr>
                         ))}
                     </tbody>
                 </table>
-            </div>
-
-            {/* Légende */}
-            <div className="mt-6 flex justify-center space-x-6">
-                <div className="flex items-center">
-                    <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-2">
-                        <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
-                        </svg>
-                    </div>
-                    <span className="text-sm font-medium">Service inclus</span>
-                </div>
-
-                <div className="flex items-center">
-                    <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-2">
-                        <svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </div>
-                    <span className="text-sm font-medium">Service non inclus</span>
-                </div>
             </div>
         </div>
     );
