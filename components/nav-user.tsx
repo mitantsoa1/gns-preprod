@@ -99,8 +99,8 @@ export function NavUser({
               </div>
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuGroup>
-              <DropdownMenuItem onClick={() => router.push(`/${locale}/profile`)} className="hover:cursor-pointer">
+            {/* <DropdownMenuGroup>
+              <DropdownMenuItem onClick={() => router.push(`/${locale}/dashboard/profile`)} className="hover:cursor-pointer">
                 <UserIcon />
                 Profile
               </DropdownMenuItem>
@@ -120,7 +120,7 @@ export function NavUser({
                 Notifications
               </DropdownMenuItem>
             </DropdownMenuGroup>
-            <DropdownMenuSeparator />
+            <DropdownMenuSeparator /> */}
             <DropdownMenuItem onClick={handleLogout} className="hover:cursor-pointer">
               <LogOut />
               {isLoading ? 'Logging out' : 'Log out'}

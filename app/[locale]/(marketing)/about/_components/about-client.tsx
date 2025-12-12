@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import ButtonText from '@/components/ButtonText'
 import FAQ from '@/components/FAQ'
 import DownloadButton from '@/components/DownloadButton'
 import { motion } from 'framer-motion'
